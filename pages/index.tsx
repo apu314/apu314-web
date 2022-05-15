@@ -36,16 +36,22 @@ const Home: NextPage<Props> = ({ posts }) => {
         className="container min-h-full w-full"
       >
         {/* <Posts posts={posts} /> */}
-        <div>
-          <Image
-            src="/images/profile-photo.webp"
-            objectFit="cover"
-            alt="profile photo"
-            width={200}
-            height={200}
-            // layout="fill"
-            className="rounded-full m-1 hover:shadow-sm transition-shadow duration-200"
-          />
+        <div
+          className='flex flex-col'
+        >
+          <div
+            className='flex justify-center sm:justify-start'
+          >
+            <Image
+              src="/images/profile-photo.webp"
+              objectFit="cover"
+              alt="profile photo"
+              width={200}
+              height={200}
+              // layout="fill"
+              className="rounded-full m-1 hover:shadow-sm transition-shadow duration-200"
+            />
+          </div>
           <h1
             className="text-4xl font-normal mt-5"
           >
