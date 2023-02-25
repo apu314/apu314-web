@@ -1,36 +1,11 @@
-import React, { FC } from 'react'
-import { Post as IPost } from '../../types/Post'
+import type { Post as IPost } from '../../types/Post'
+
+import { FC } from 'react'
 import Link from 'next/link'
-import dateFormat, { i18n } from 'dateformat'
+
+import { formatToReadableDate } from '../../helpers/dateHelper'
 
 import styles from './PostCard.module.scss'
-
-i18n.monthNames = [
-  'Ene',
-  'Feb',
-  'Mar',
-  'Abr',
-  'May',
-  'Jun',
-  'Jul',
-  'Ago',
-  'Sep',
-  'Oct',
-  'Nov',
-  'Dic',
-  'Enero',
-  'Febrero',
-  'Marzo',
-  'Abril',
-  'Mayo',
-  'Junio',
-  'Julio',
-  'Agosto',
-  'Septiembre',
-  'Octubre',
-  'Noviembre',
-  'Diciembre'
-]
 
 interface Props {
   post: IPost
@@ -39,11 +14,6 @@ interface Props {
 const PostCard: FC<Props> = ({ post }) => {
   const getDateTime = () => {
     return new Date(post.frontmatter.publishedDate).toISOString()
-  }
-
-  const formatToReadableDate = () => {
-    const date = new Date(post.frontmatter.publishedDate)
-    return dateFormat(date, 'd mmmm yyyy')
   }
 
   return (
@@ -55,7 +25,9 @@ const PostCard: FC<Props> = ({ post }) => {
         >
           <h1 className={`${styles.postTitle}`}>{post.frontmatter.title}</h1>
           <div className={styles.meta}>
-            <time dateTime={getDateTime()}>{formatToReadableDate()}</time>
+            <time dateTime={getDateTime()}>
+              {formatToReadableDate(post.frontmatter.publishedDate)}
+            </time>
           </div>
         </a>
       </Link>

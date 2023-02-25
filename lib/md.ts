@@ -1,6 +1,7 @@
 import fs from 'fs'
 import path from 'path'
 import matter from 'gray-matter'
+import { Post } from '../types/Post'
 
 export const getPath = (folder: string) => {
   return path.join(process.cwd(), `/${folder}`)
@@ -47,4 +48,20 @@ export const getSinglePost = (slug: string, folder: string) => {
     frontmatter,
     content
   }
+}
+
+//? Older dates to the end of the array
+export const getAllPublishedPostsDesc = (folder: string): any[] => {
+  const posts = getAllPublishedPosts(folder)
+
+  const sortedPosts = posts.sort((a, b) => {
+    const dateA = new Date(a.frontmatter.publishedDate)
+    const dateB = new Date(b.frontmatter.publishedDate)
+
+    if (dateB < dateA) return 1
+    if (dateB > dateA) return -1
+    return 0
+  })
+
+  return sortedPosts
 }

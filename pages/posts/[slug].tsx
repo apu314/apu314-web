@@ -7,14 +7,16 @@ import { getSinglePost, getAllPublishedPosts } from '../../lib/md'
 import Markdown from '../../components/markdown/Markdown'
 
 import styles from '../../styles/Post.module.scss'
+import { formatToReadableDate } from '../../helpers/dateHelper'
 
 const PostPage: NextPage<Post> = ({ content, frontmatter }) => {
   return (
     <div className={styles.container}>
       <h2 className={styles.title}>{frontmatter.title}</h2>
       <div className="meta  grid grid-flow-col justify-start place-items-center gap-2">
-        <span className={styles.publishDate}>{frontmatter.publishedDate}</span>
-        <div className={styles.tags}>{frontmatter.tags.join(', ')}</div>
+        <span className={styles.publishDate}>
+          {formatToReadableDate(frontmatter.publishedDate)}
+        </span>
       </div>
 
       <hr className={`${styles.separator}`} />
