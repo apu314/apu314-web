@@ -27,6 +27,16 @@ main {
 }
 
 @layer components {
+  .menu-button {
+    @apply hover:text-314-blue 
+      transition-colors 
+      duration-200
+      absolute 
+      top-3 
+      right-3
+      hover:shadow-md
+      rounded-md
+  }
 
   .icon-github {
     @apply hover:text-github transition-colors duration-200
@@ -37,4 +47,15 @@ main {
   .icon-twitter {
     @apply hover:text-twitter transition-colors duration-200
   }
+}
+
+pre {
+  padding: 16px;
+  overflow: auto;
+  font-size: 85%;
+  line-height: 1.45;
+  background-color: #2d333b;
+  color: rgb(229, 192, 123);
+  border-radius: 6px;
+  margin-bottom: 2rem;
 }

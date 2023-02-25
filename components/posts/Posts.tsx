@@ -1,23 +1,18 @@
-import React, { FC } from 'react'
-import { Post } from '../../pages';
-
+import { FC } from 'react'
+import { Post as IPost } from '../../types/Post'
+import PostCard from './PostCard'
 
 interface Props {
-  posts: Post[]
+  posts: IPost[]
 }
 
 const Posts: FC<Props> = ({ posts }) => {
   return (
-    <>
-      {posts.map((post: Post) => {
-        return (
-          <div key={post._id}>
-            <h1>{post.title}</h1>
-            <p>{post.brief}</p>
-          </div>
-        );
-      })}
-    </>
+    <div className="grid grid-flow-row gap-3 text-neutral-600 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
+      {posts.map((post: IPost) => (
+        <PostCard key={post.slug} post={post} />
+      ))}
+    </div>
   )
 }
 

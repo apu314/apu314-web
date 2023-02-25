@@ -1,0 +1,32 @@
+.postCard {
+  border: 1px solid lighten(#eaeaea, 5%);
+  box-shadow: 0 4px 6px rgb(0 0 0 / 4%);
+  border-radius: 8px;
+  // min-width: 300px;
+  // max-width: 500px;
+  padding: 1rem;
+  transition: box-shadow .15s ease;
+
+  &:hover {
+    .postTitle {
+      text-decoration: underline;
+      text-decoration-thickness: .1em;
+      color: #1b8dda;
+    }
+  }
+}
+
+.postTitle {
+  // font-size: 2em;
+  font-weight: 600;
+  transition: all .15s ease;
+}
+
+.postCard:hover {
+  box-shadow: 0 6px 14px rgb(0 0 0 / 8%);
+}
+
+.meta {
+  font-size: .8em;
+  padding-top: .25rem;
+}

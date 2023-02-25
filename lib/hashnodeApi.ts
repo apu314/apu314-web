@@ -1,9 +1,12 @@
-
-import { ApolloClient, InMemoryCache, gql, NormalizedCacheObject } from '@apollo/client'
-import { Post } from "../pages";
+import {
+  ApolloClient,
+  InMemoryCache,
+  gql,
+  NormalizedCacheObject
+} from '@apollo/client'
+import { Post } from '../pages'
 
 const initApolloClient = (): ApolloClient<NormalizedCacheObject> => {
-
   const client = new ApolloClient({
     uri: 'https://api.hashnode.com/',
     cache: new InMemoryCache()
