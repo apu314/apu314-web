@@ -1,6 +1,5 @@
 import { GetStaticPaths, GetStaticProps, NextPage } from 'next'
 
-// import rehypeHighlight from 'rehype-highlight'
 import { Post } from '../../types/Post'
 
 import { getSinglePost, getAllPublishedPosts } from '../../lib/md'
@@ -16,6 +15,9 @@ const PostPage: NextPage<Post> = ({ content, frontmatter }) => {
       <div className="meta  grid grid-flow-col justify-start place-items-center gap-2">
         <span className={styles.publishDate}>
           {formatToReadableDate(frontmatter.publishedDate)}
+          {frontmatter.tags && Boolean(frontmatter.tags.length) && (
+            <div className={styles.tags}>{frontmatter.tags.join(', ')}</div>
+          )}
         </span>
       </div>
 
