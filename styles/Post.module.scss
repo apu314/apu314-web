@@ -7,7 +7,7 @@
 }
 
 .publishDate {
-  font-size: .8em;
+  font-size: 0.8em;
   font-weight: lighter;
 }
 
@@ -15,14 +15,14 @@
   // border: 1px solid #eaeaea;
   // border-radius: 8px;
   display: inline-block;
-  padding: .05rem .5rem;
+  padding: 0.05rem 0.5rem;
   // background-color: darken(#eaeaea, 7);
 }
 
 hr.separator {
   border-top-width: 2px;
   color: #1b8dda;
-  margin: .5rem 0 1.5rem 0;
+  margin: 0.5rem 0 1.5rem 0;
 }
 
 .content {
@@ -30,7 +30,7 @@ hr.separator {
     font-size: 1.5em;
     margin-bottom: 1rem;
   }
-  
+
   p {
     margin-bottom: 2rem;
   }

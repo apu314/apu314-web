@@ -15,7 +15,6 @@ Veniam culpa quis exercitation veniam dolore adipisicing cillum minim non repreh
 ```javascript
 const hello = 'hello'
 const world = 'Post 2'
-
 ```
 
 Labore ea occaecat ullamco est officia commodo dolore adipisicing eiusmod. Sint est non nisi fugiat elit quis duis laborum sit sit labore esse. Dolore labore do dolor fugiat quis ullamco. Nulla sunt elit excepteur exercitation exercitation irure do dolore duis id officia mollit sit.

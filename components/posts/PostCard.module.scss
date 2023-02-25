@@ -5,12 +5,12 @@
   // min-width: 300px;
   // max-width: 500px;
   padding: 1rem;
-  transition: box-shadow .15s ease;
+  transition: box-shadow 0.15s ease;
 
   &:hover {
     .postTitle {
       text-decoration: underline;
-      text-decoration-thickness: .1em;
+      text-decoration-thickness: 0.1em;
       color: #1b8dda;
     }
   }
@@ -19,7 +19,7 @@
 .postTitle {
   // font-size: 2em;
   font-weight: 600;
-  transition: all .15s ease;
+  transition: all 0.15s ease;
 }
 
 .postCard:hover {
@@ -27,6 +27,6 @@
 }
 
 .meta {
-  font-size: .8em;
-  padding-top: .25rem;
+  font-size: 0.8em;
+  padding-top: 0.25rem;
 }

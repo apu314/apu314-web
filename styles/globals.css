@@ -2,7 +2,8 @@
 @tailwind components;
 @tailwind utilities;
 
-body, body > div {
+body,
+body > div {
   min-height: 100vh;
 }
 
@@ -35,17 +36,17 @@ main {
       top-3 
       right-3
       hover:shadow-md
-      rounded-md
+      rounded-md;
   }
 
   .icon-github {
-    @apply hover:text-github transition-colors duration-200
+    @apply hover:text-github transition-colors duration-200;
   }
   .icon-linkedin {
-    @apply hover:text-linkedin transition-colors duration-200
+    @apply hover:text-linkedin transition-colors duration-200;
   }
   .icon-twitter {
-    @apply hover:text-twitter transition-colors duration-200
+    @apply hover:text-twitter transition-colors duration-200;
   }
 }
 

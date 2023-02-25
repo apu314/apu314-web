@@ -8,7 +8,6 @@ tags:
   - React
 ---
 
-
 Veniam culpa quis exercitation veniam dolore adipisicing cillum minim non reprehenderit. Officia minim reprehenderit labore ea elit sunt ipsum quis ea est tempor enim dolor. Nostrud consequat magna et aliquip enim nostrud amet magna magna laborum. Est culpa elit dolore eiusmod quis quis qui ex voluptate veniam cillum sint. Laboris nisi cillum sit sint velit in. Adipisicing est in cillum amet fugiat laborum amet Lorem.
 
 ```js
@@ -16,7 +15,6 @@ const hello = 'hello'
 const world = 'world'
 
 console.log(`${hello} ${world}!`)
-
 ```
 
 ## Heading 2
