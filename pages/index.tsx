@@ -41,7 +41,6 @@ const Home: NextPage<Props> = ({ posts }) => {
 
 export const getStaticProps: GetStaticProps = async (ctx) => {
   const posts = await getAllPublishedPosts('content/posts')
-  console.log('[getStaticProps] posts', posts)
 
   return {
     props: {

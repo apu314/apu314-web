@@ -3,8 +3,6 @@ import path from 'path'
 import matter from 'gray-matter'
 
 export const getPath = (folder: string) => {
-  console.log('folder', folder)
-  console.log(path.join(process.cwd(), `/${folder}`))
   return path.join(process.cwd(), `/${folder}`)
 }
 
@@ -15,7 +13,6 @@ export const getFileContent = (filename: string, folder: string) => {
 
 export const getAllPosts = (folder: string) => {
   const postsPath = getPath(folder)
-  console.log('[getAllPublishedPosts - md.ts] - postsPath ', postsPath)
 
   return fs
     .readdirSync(postsPath)
@@ -34,7 +31,6 @@ export const getAllPosts = (folder: string) => {
 
 export const getAllPublishedPosts = (folder: string) => {
   const posts = getAllPosts(folder)
-  console.log('[getAllPublishedPosts - md.ts] - posts ', posts)
 
   const published = posts.filter((post) => {
     return post.frontmatter.isPublished === true
