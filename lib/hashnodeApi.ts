@@ -4,7 +4,7 @@ import {
   gql,
   NormalizedCacheObject
 } from '@apollo/client'
-import { Post } from '../pages'
+import { Post } from '../types/Post'
 
 const initApolloClient = (): ApolloClient<NormalizedCacheObject> => {
   const client = new ApolloClient({
