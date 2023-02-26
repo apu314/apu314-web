@@ -1,5 +1,3 @@
-
-
 @layer components {
   .icon-github {
     @apply hover:text-github transition-colors duration-200;
