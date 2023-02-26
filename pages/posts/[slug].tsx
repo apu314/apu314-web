@@ -3,27 +3,26 @@ import { GetStaticPaths, GetStaticProps, NextPage } from 'next'
 import { Post } from '../../types/Post'
 
 import { getSinglePost, getAllPublishedPosts } from '../../lib/md'
-import Markdown from '../../components/markdown/Markdown'
-
-import styles from '../../styles/Post.module.css'
 import { formatToReadableDate } from '../../helpers/dateHelper'
+
+import Markdown from '../../components/markdown/Markdown'
 
 const PostPage: NextPage<Post> = ({ content, frontmatter }) => {
   return (
-    <div className={styles.container}>
-      <h2 className={styles.title}>{frontmatter.title}</h2>
+    <div className="post-container">
+      <h2 className="post-title">{frontmatter.title}</h2>
       <div className="meta  grid grid-flow-col justify-start place-items-center gap-2">
-        <span className={styles.publishDate}>
+        <span className="post-publishDate">
           {formatToReadableDate(frontmatter.publishedDate)}
           {frontmatter.tags && Boolean(frontmatter.tags.length) && (
-            <div className={styles.tags}>{frontmatter.tags.join(', ')}</div>
+            <div className="post-tags">{frontmatter.tags.join(', ')}</div>
           )}
         </span>
       </div>
 
-      <hr className={`${styles.separator}`} />
+      <hr className="post-separator" />
 
-      <div className={styles.content}>
+      <div className="post-content">
         <Markdown content={content} />
       </div>
     </div>

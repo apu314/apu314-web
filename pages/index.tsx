@@ -1,7 +1,6 @@
 import type { NextPage, GetStaticProps } from 'next'
 import Head from 'next/head'
 
-// import styles from '../styles/Home.module.css'
 // import { getPosts } from '../lib/hashnodeApi'
 import { getAllPublishedPosts } from '../lib/md'
 import Posts from '../components/posts/Posts'
