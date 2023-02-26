@@ -5,8 +5,6 @@ import Link from 'next/link'
 
 import { formatToReadableDate } from '../../helpers/dateHelper'
 
-import styles from './PostCard.module.scss'
-
 interface Props {
   post: IPost
 }
@@ -18,13 +16,13 @@ const PostCard: FC<Props> = ({ post }) => {
 
   return (
     <>
-      <Link href={`posts/${post.slug}`}>
+      <Link href={`/posts/${post.slug}`}>
         {/* <a className={`${styles.postCard}  rounded shadow-lg shadow-gray-200 dark:shadow-gray-900 bg-white dark:bg-gray-800 duration-300`}> */}
-        <a
-          className={`${styles.postCard}  rounded shadow-lg shadow-gray-200 dark:shadow-gray-900 bg-white dark:bg-gray-800 duration-300`}
-        >
-          <h1 className={`${styles.postTitle}`}>{post.frontmatter.title}</h1>
-          <div className={styles.meta}>
+        <a className="card  rounded shadow-lg shadow-gray-200 dark:shadow-gray-900 bg-white dark:bg-gray-800 duration-300">
+          <h1 className="card-title dark:text-slate-300">
+            {post.frontmatter.title}
+          </h1>
+          <div className="card-meta">
             <time dateTime={getDateTime()}>
               {formatToReadableDate(post.frontmatter.publishedDate)}
             </time>

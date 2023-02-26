@@ -1,0 +1,34 @@
+@import './icon.css';
+@import './card.css';
+
+@layer components {
+  .menu-container {
+    @apply 
+      absolute
+      top-3
+      right-3
+      rounded-md
+      flex
+      flex-row-reverse
+  }
+  .menu-button, .dark-mode-switcher {
+    @apply hover:text-314-blue 
+      transition-colors 
+      duration-200
+      /* absolute  */
+      /* top-3  */
+      /* right-3 */
+      hover:shadow-md
+      rounded-md;
+  }
+
+  .dark-mode-switcher {
+    font-size: 1.5em;
+    width: 40px;
+    height: 40px;
+    @apply
+      flex
+      justify-center
+      items-center
+  }
+}

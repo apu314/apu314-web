@@ -4,6 +4,7 @@ module.exports = {
     './components/**/*.{js,jsx,ts,tsx}',
     './layouts/**/*.{js,jsx,ts,tsx}'
   ],
+  darkModde: 'class',
   theme: {
     colors: {
       github: '#171515',

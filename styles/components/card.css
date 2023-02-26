@@ -1,0 +1,30 @@
+@layer components {
+  .card {
+    border: 1px solid lighten(#eaeaea, 5%);
+    box-shadow: 0 4px 6px rgb(0 0 0 / 4%);
+    border-radius: 8px;
+    padding: 1rem;
+    transition: box-shadow 0.15s ease;
+  }
+  
+  .card:hover {
+    box-shadow: 0 6px 14px rgb(0 0 0 / 8%);
+  
+  }
+  .card:hover ~ .card-title {
+    text-decoration: underline;
+    text-decoration-thickness: 0.1em;
+    color: #1b8dda;
+  }
+  
+  .card-title {
+    font-weight: 600;
+    transition: all 0.15s ease;
+  }
+  
+  .card-meta {
+    font-size: 0.8em;
+    padding-top: 0.25rem;
+  }
+  
+}

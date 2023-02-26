@@ -1,6 +1,13 @@
+@import './components/components.css';
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+html {
+  scroll-behavior: smooth;
+}
 
 body {
   font-family: -apple-system, BlinkMacSystemFont, segoe ui, Roboto, Helvetica,
@@ -37,29 +44,6 @@ main {
 
 .link-underline:hover {
   text-decoration-color: rgba(0, 0, 0, 1);
-}
-
-@layer components {
-  .menu-button {
-    @apply hover:text-314-blue 
-      transition-colors 
-      duration-200
-      absolute 
-      top-3 
-      right-3
-      hover:shadow-md
-      rounded-md;
-  }
-
-  .icon-github {
-    @apply hover:text-github transition-colors duration-200;
-  }
-  .icon-linkedin {
-    @apply hover:text-linkedin transition-colors duration-200;
-  }
-  .icon-twitter {
-    @apply hover:text-twitter transition-colors duration-200;
-  }
 }
 
 pre {

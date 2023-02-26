@@ -5,7 +5,7 @@ import { Post } from '../../types/Post'
 import { getSinglePost, getAllPublishedPosts } from '../../lib/md'
 import Markdown from '../../components/markdown/Markdown'
 
-import styles from '../../styles/Post.module.scss'
+import styles from '../../styles/Post.module.css'
 import { formatToReadableDate } from '../../helpers/dateHelper'
 
 const PostPage: NextPage<Post> = ({ content, frontmatter }) => {
