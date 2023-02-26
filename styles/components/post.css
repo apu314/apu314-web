@@ -1,0 +1,35 @@
+@layer components {
+  
+  .post-container {
+    padding: 2.5rem 3.5rem;
+
+    p {
+      margin-bottom: 2rem;
+    }
+  }
+
+  .post-title {
+    font-size: 2.8em;
+  }
+
+  .post-publishDate {
+    font-size: 0.8em;
+    font-weight: 300;
+  }
+
+  .post-tags {
+    display: inline-block;
+    padding: 0.05rem 0.5rem;
+  }
+
+  hr.post-separator {
+    border-top-width: 2px;
+    color: #1b8dda;
+    margin: 0.5rem 0 1.5rem 0;
+  }
+
+  .post-content h2 {
+    font-size: 1.5em;
+    margin-bottom: 1rem;
+  }
+}
