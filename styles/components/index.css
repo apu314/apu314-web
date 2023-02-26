@@ -9,7 +9,7 @@
       right-3
       rounded-md
       flex
-      flex-row-reverse;
+      flex-row;
   }
   .menu-button,
   .dark-mode-switcher {

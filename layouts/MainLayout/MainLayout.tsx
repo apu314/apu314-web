@@ -16,8 +16,8 @@ const MainLayout: FC<Props> = (props) => {
     <>
       <Header />
       <div className="menu-container">
-        <MenuButton />
         <DarkModeSwitcher />
+        {/* <MenuButton /> */}
       </div>
       <div className={classNames}>{children}</div>
       <Footer />
