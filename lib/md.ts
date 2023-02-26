@@ -25,7 +25,7 @@ export const getAllPosts = (folder: string) => {
 
       return {
         frontmatter: data,
-        slug
+        slug: slug.toLowerCase()
       }
     })
 }
