@@ -11,7 +11,9 @@
     font-size: 2.8em;
   }
 
-  .post-publishDate, .post-readingTime, .post-tags {
+  .post-publishDate,
+  .post-readingTime,
+  .post-tags {
     font-size: 0.8em;
     font-weight: 300;
   }

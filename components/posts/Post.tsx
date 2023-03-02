@@ -20,9 +20,15 @@ const Post: FC<Props> = ({ post }) => {
         <span className="post-publishDate">
           {formatToReadableDate(frontmatter.publishedDate)}
         </span>
-        -<span className="post-readingTime">{readingTime}</span>-
+        {readingTime && (
+          <>
+            -<span className="post-readingTime">{readingTime}</span>
+          </>
+        )}
         {frontmatter.tags && Boolean(frontmatter.tags.length) && (
-          <span className="post-tags">{frontmatter.tags.join(', ')}</span>
+          <>
+            -<span className="post-tags">{frontmatter.tags.join(', ')}</span>
+          </>
         )}
       </div>
 
