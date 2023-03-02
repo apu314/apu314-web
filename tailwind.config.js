@@ -28,7 +28,10 @@ module.exports = {
         '2xl': '1520px',
       } */
     },
-    extend: {}
+    extend: {
+      backgroundColor: ['dark'],
+      textColor: ['dark']
+    }
   },
   plugins: []
 }

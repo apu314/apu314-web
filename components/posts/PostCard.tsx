@@ -16,18 +16,19 @@ const PostCard: FC<Props> = ({ post }) => {
 
   return (
     <>
-      <Link href={`/posts/${post.slug}`}>
+      <Link
+        href={`/posts/${post.slug}`}
+        className="card  rounded shadow-lg shadow-gray-200 dark:shadow-gray-900 bg-white dark:bg-gray-800 duration-300"
+      >
         {/* <a className={`${styles.postCard}  rounded shadow-lg shadow-gray-200 dark:shadow-gray-900 bg-white dark:bg-gray-800 duration-300`}> */}
-        <a className="card  rounded shadow-lg shadow-gray-200 dark:shadow-gray-900 bg-white dark:bg-gray-800 duration-300">
-          <h1 className="card-title dark:text-slate-300">
-            {post.frontmatter.title}
-          </h1>
-          <div className="card-meta">
-            <time dateTime={getDateTime()}>
-              {formatToReadableDate(post.frontmatter.publishedDate)}
-            </time>
-          </div>
-        </a>
+        <h1 className="card-title dark:text-slate-300">
+          {post.frontmatter.title}
+        </h1>
+        <div className="card-meta">
+          <time dateTime={getDateTime()}>
+            {formatToReadableDate(post.frontmatter.publishedDate)}
+          </time>
+        </div>
       </Link>
     </>
   )

@@ -7,6 +7,7 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
+    "format": "prettier --write .",
     "prepare": "husky install"
   },
   "dependencies": {
@@ -16,10 +17,11 @@
     "gray-matter": "^4.0.3",
     "highlight.js": "^11.7.0",
     "marked": "^4.2.12",
-    "next": "12.1.4",
+    "next": "^13.2.1",
     "next-themes": "^0.2.1",
-    "react": "18.2.0",
-    "react-dom": "18.2.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-hook-reading-time": "^1.0.0",
     "react-icons": "^4.7.1"
   },
   "devDependencies": {
@@ -31,7 +33,7 @@
     "autoprefixer": "^10.4.7",
     "cssnano": "^5.1.15",
     "eslint": "8.13.0",
-    "eslint-config-next": "12.1.4",
+    "eslint-config-next": "^13.2.1",
     "husky": "^8.0.3",
     "lint-staged": "^13.1.2",
     "postcss": "^8.4.21",

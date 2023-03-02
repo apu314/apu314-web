@@ -1,31 +1,18 @@
-import { GetStaticPaths, GetStaticProps, NextPage } from 'next'
+import type { GetStaticPaths, GetStaticProps, NextPage } from 'next'
+import type { Post as IPost } from '../../types/Post'
 
-import { Post } from '../../types/Post'
+import Post from '../../components/posts/Post'
+import { MainLayout } from '../../layouts'
 
 import { getSinglePost, getAllPublishedPosts } from '../../lib/md'
-import { formatToReadableDate } from '../../helpers/dateHelper'
 
-import Markdown from '../../components/markdown/Markdown'
-
-const PostPage: NextPage<Post> = ({ content, frontmatter }) => {
+const PostPage: NextPage<IPost> = (post) => {
   return (
-    <div className="post-container">
-      <h2 className="post-title">{frontmatter.title}</h2>
-      <div className="meta  grid grid-flow-col justify-start place-items-center gap-2">
-        <span className="post-publishDate">
-          {formatToReadableDate(frontmatter.publishedDate)}
-          {frontmatter.tags && Boolean(frontmatter.tags.length) && (
-            <div className="post-tags">{frontmatter.tags.join(', ')}</div>
-          )}
-        </span>
+    <MainLayout>
+      <div className="post-container">
+        <Post post={post} />
       </div>
-
-      <hr className="post-separator" />
-
-      <div className="post-content">
-        <Markdown content={content} />
-      </div>
-    </div>
+    </MainLayout>
   )
 }
 

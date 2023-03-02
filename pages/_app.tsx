@@ -6,9 +6,7 @@ import { MainLayout } from '../layouts'
 function MyApp({ Component, pageProps }: AppProps) {
   return (
     <ThemeProvider enableSystem={true} attribute="class">
-      <MainLayout>
-        <Component {...pageProps} />
-      </MainLayout>
+      <Component {...pageProps} />
     </ThemeProvider>
   )
 }

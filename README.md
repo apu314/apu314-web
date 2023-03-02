@@ -1,13 +1,23 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+![Vercel](https://vercelbadge.vercel.app/api/apu314/apu314-web)
 
-Using hashnode api to get blog content.
+Code repository for my personal web [apu314.com](https://apu314.com/)
 
 ## Getting Started
 
-First, run the development server:
+**Project uses ```Yarn```** for package management
+
+Want to run the development server?
 
 ```bash
-npm run dev
-# or
+yarn
 yarn dev
 ```
+
+Building for production?
+
+```bash
+yarn build
+yarn start
+```
+
+There are other commands available, check package.json scripts for more
