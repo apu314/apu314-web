@@ -30,8 +30,15 @@
     margin: 0.5rem 0 1.5rem 0;
   }
 
-  .post-content h2 {
-    font-size: 1.5em;
-    margin-bottom: 1rem;
+  .post-content {
+    h2 {
+      font-size: 1.5em;
+      margin-bottom: 1rem;
+    }
+
+    h3 {
+      font-size: 1.25em;
+      margin-bottom: .85rem;
+    }
   }
 }

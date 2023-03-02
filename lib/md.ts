@@ -54,12 +54,10 @@ export const getAllPublishedPostsDesc = (folder: string): unknown[] => {
   const posts = getAllPublishedPosts(folder)
 
   const sortedPosts = posts.sort((a, b) => {
-    const dateA = new Date(a.frontmatter.publishedDate)
-    const dateB = new Date(b.frontmatter.publishedDate)
+    const dateA = new Date(a.frontmatter.publishedDate).getTime()
+    const dateB = new Date(b.frontmatter.publishedDate).getTime()
 
-    if (dateB < dateA) return 1
-    if (dateB > dateA) return -1
-    return 0
+    return dateB - dateA
   })
 
   return sortedPosts

@@ -2,7 +2,7 @@ import type { NextPage, GetStaticProps } from 'next'
 import Head from 'next/head'
 
 // import { getPosts } from '../lib/hashnodeApi'
-import { getAllPublishedPosts } from '../lib/md'
+import { getAllPublishedPostsDesc } from '../lib/md'
 import Posts from '../components/posts/Posts'
 import { Post } from '../types/Post'
 import MainLayout from '../layouts/MainLayout'
@@ -42,7 +42,7 @@ const Home: NextPage<Props> = ({ posts }) => {
 }
 
 export const getStaticProps: GetStaticProps = async (ctx) => {
-  const posts = await getAllPublishedPosts('content/posts')
+  const posts = await getAllPublishedPostsDesc('content/posts')
 
   return {
     props: {
