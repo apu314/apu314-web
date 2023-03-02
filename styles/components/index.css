@@ -1,6 +1,7 @@
 @import './icon.css';
 @import './card.css';
 @import './post.css';
+@import './profileHero.css';
 
 @layer components {
   .menu-container {

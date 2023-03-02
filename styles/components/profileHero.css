@@ -1,0 +1,17 @@
+.profileHero {
+  .profileImage--wrapper {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    min-width: 200px;
+    min-height: 200px;
+    overflow: hidden;
+    border-radius: 50%;
+
+    img {
+      width: auto;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+}

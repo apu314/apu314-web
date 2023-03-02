@@ -7,17 +7,15 @@ type Props = {}
 
 const ProfileHero: FC<Props> = (props) => {
   return (
-    <div className="flex mb-10 sm:flex-row flex-col">
-      <div className="sm:flex sm:items-center justify-center sm:justify-start mr-5 relative w-200 h-200 overflow-hidden">
-        <div className="relative overflow-hidden rounded-full h-full w-200 max-w-[200px]">
+    <div className="profileHero flex mb-10 sm:flex-row flex-col">
+      <div className="flex items-center justify-center sm:justify-start mr-5">
+        <div className="profileImage--wrapper">
           <Image
             src="/images/profile-photo.webp"
-            style={{ objectFit: 'cover' }}
             alt="profile photo"
             width={200}
             height={200}
             priority={true}
-            className="h-full"
           />
         </div>
       </div>
