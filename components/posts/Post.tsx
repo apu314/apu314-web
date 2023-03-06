@@ -11,7 +11,7 @@ interface Props {
 const Post: FC<Props> = ({ post }) => {
   const { frontmatter, content } = post
 
-  const { text: readingTime } = useReadingTime(content)
+  const { minutes: readingTime } = useReadingTime(content)
 
   return (
     <>
@@ -22,7 +22,8 @@ const Post: FC<Props> = ({ post }) => {
         </span>
         {readingTime && (
           <>
-            -<span className="post-readingTime">{readingTime}</span>
+            -
+            <span className="post-readingTime">{`${readingTime} minutos de lectura`}</span>
           </>
         )}
         {frontmatter.tags && Boolean(frontmatter.tags.length) && (
