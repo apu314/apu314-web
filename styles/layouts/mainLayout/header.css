@@ -1,0 +1,25 @@
+@layer components {
+  header.header {
+    @apply py-4 mb-8;
+  }
+
+  .header-inner {
+    @apply flex justify-between items-center py-4;
+  }
+
+  .logo {
+    @apply 
+      h-11
+      w-11
+      /* w-auto */
+      flex 
+      items-center 
+      justify-center
+      menu-button;
+    font-size: 1.5em;
+  }
+
+  nav.header-nav {
+    @apply flex items-center;
+  }
+}

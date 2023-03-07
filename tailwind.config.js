@@ -10,7 +10,18 @@ module.exports = {
       github: '#171515',
       linkedin: '#0A66C2',
       twitter: '#1A8CD8',
-      '314-blue': '#1b8dda'
+      '314-blue': '#1b8dda',
+      //
+      // white: '#fff',
+      blue: '#1fb6ff',
+      purple: '#7e5bef',
+      pink: '#ff49db',
+      orange: '#ff7849',
+      green: '#13ce66',
+      yellow: '#ffc82c',
+      'gray-dark': '#273444',
+      gray: '#8492a6',
+      'gray-light': '#d3dce6'
     },
     container: {
       padding: {

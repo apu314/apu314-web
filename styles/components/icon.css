@@ -1,6 +1,10 @@
 @layer components {
+  .icon {
+    @apply p-2 cursor-pointer rounded-md hover:shadow-md;
+  }
+
   .icon-github {
-    @apply hover:text-github transition-colors duration-200;
+    @apply /* hover:text-github */ dark:hover:text-gray-light transition-colors duration-200;
   }
   .icon-linkedin {
     @apply hover:text-linkedin transition-colors duration-200;

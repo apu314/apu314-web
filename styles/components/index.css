@@ -2,18 +2,10 @@
 @import './card.css';
 @import './post.css';
 @import './profileHero.css';
+@import './darkModeSwitcher.css';
 
 @layer components {
-  .menu-container {
-    @apply absolute
-      top-3
-      right-3
-      rounded-md
-      flex
-      flex-row;
-  }
-  .menu-button,
-  .dark-mode-switcher {
+  .menu-button {
     @apply hover:text-314-blue 
       transition-colors 
       duration-200
@@ -24,12 +16,5 @@
       rounded-md;
   }
 
-  .dark-mode-switcher {
-    font-size: 1.5em;
-    width: 40px;
-    height: 40px;
-    @apply flex
-      justify-center
-      items-center;
-  }
+  
 }

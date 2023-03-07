@@ -1,5 +1,6 @@
 @import './components/index.css';
 @import './pages/index.css';
+@import './layouts/index.css';
 
 @tailwind base;
 @tailwind components;
@@ -33,7 +34,6 @@ body > div {
 
 main {
   max-width: none !important;
-  padding-top: 3rem;
 }
 
 .link-underline {
@@ -55,4 +55,9 @@ pre {
   color: rgb(229, 192, 123);
   border-radius: 6px;
   margin-bottom: 2rem;
+}
+
+.center-content {
+  @apply py-0 px-8;
+  /* 0 32 */
 }

@@ -1,10 +1,15 @@
 @layer components {
   .post-container {
-    padding: 2.5rem 3.5rem;
+    @apply my-0 mx-auto px-4 py-0 sm:px-8 sm:py-0 max-w-full xl:max-w-screen-xl flex flex-col;
 
     p {
       margin-bottom: 2rem;
     }
+
+  }
+  
+  .article {
+    @apply max-w-[800px] my-0 mx-auto w-full;
   }
 
   .post-title {

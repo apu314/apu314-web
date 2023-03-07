@@ -30,6 +30,7 @@ const Home: NextPage<Props> = ({ posts }) => {
 
       <main className="container  min-h-full w-full">
         <ProfileHero />
+
         {Boolean(posts.length) && (
           <div>
             <h2 className="text-xl font-medium mb-4">Últimos artículos</h2>

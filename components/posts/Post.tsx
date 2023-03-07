@@ -14,7 +14,7 @@ const Post: FC<Props> = ({ post }) => {
   const { minutes: readingTime } = useReadingTime(content)
 
   return (
-    <>
+    <article className="article">
       <h2 className="post-title">{frontmatter.title}</h2>
       <div className="meta  grid grid-flow-col justify-start place-items-center gap-2">
         <span className="post-publishDate">
@@ -38,7 +38,7 @@ const Post: FC<Props> = ({ post }) => {
       <div className="post-content">
         <Markdown content={content} />
       </div>
-    </>
+    </article>
   )
 }
 

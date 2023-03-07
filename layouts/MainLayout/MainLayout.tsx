@@ -1,6 +1,4 @@
 import { FC, ReactNode } from 'react'
-import { DarkModeSwitcher } from '../../components/ui/darkModeSwitcher'
-import { MenuButton } from '../../components/ui/menu'
 import Footer from './Footer'
 import Header from './Header'
 
@@ -15,10 +13,6 @@ const MainLayout: FC<Props> = (props) => {
   return (
     <>
       <Header />
-      <div className="menu-container">
-        <DarkModeSwitcher />
-        {/* <MenuButton /> */}
-      </div>
       <div className={classNames}>{children}</div>
       <Footer />
     </>

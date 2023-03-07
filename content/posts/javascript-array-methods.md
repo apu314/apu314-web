@@ -9,7 +9,7 @@ tags:
 
 Los arrays son una estructura de datos fundamental en JavaScript, y hay una gran cantidad de métodos que se pueden utilizar para manipularlos. En este artículo, vamos a ver los métodos de los arrays en JavaScript.
 
-### Introducción a los arrays en JavaScript
+## Introducción a los arrays en JavaScript
 
 Un array es una estructura de datos que permite almacenar una colección de elementos en una sola variable. En JavaScript, los arrays pueden contener elementos de cualquier tipo de datos, incluyendo otros arrays. Para crear un array en JavaScript, se puede utilizar la sintaxis de corchetes:
 
@@ -17,7 +17,6 @@ Un array es una estructura de datos que permite almacenar una colección de elem
 const myArray = [1, 2, 3, 4, 5]
 ```
 
-Los métodos de los arrays en JavaScript
 JavaScript proporciona una gran cantidad de métodos integrados para trabajar con los arrays. Algunos de los métodos más comunes son los siguientes:
 
 ## push() y pop()

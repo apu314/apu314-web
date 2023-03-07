@@ -8,10 +8,8 @@ import { getSinglePost, getAllPublishedPosts } from '../../lib/md'
 
 const PostPage: NextPage<IPost> = (post) => {
   return (
-    <MainLayout>
-      <div className="post-container">
-        <Post post={post} />
-      </div>
+    <MainLayout classNames="post-container">
+      <Post post={post} />
     </MainLayout>
   )
 }

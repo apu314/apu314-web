@@ -32,7 +32,7 @@ const ProfileHero: FC<Props> = (props) => {
         </div>
 
         <ul className="social-links  flex flex-row py-2">
-          <li className="p-2 cursor-pointer rounded-md hover:shadow-md icon-github">
+          <li className="icon icon-github">
             <a
               href="https://github.com/apu314"
               target="_blank"
@@ -44,7 +44,7 @@ const ProfileHero: FC<Props> = (props) => {
               />
             </a>
           </li>
-          <li className="p-2 cursor-pointer rounded-md hover:shadow-md icon-linkedin">
+          <li className="icon icon-linkedin">
             <a
               href="https://www.linkedin.com/in/adolfounturbe/"
               target="_blank"
@@ -56,7 +56,7 @@ const ProfileHero: FC<Props> = (props) => {
               />
             </a>
           </li>
-          <li className="p-2 cursor-pointer rounded-md hover:shadow-md icon-twitter">
+          <li className="icon icon-twitter">
             <a
               href="https://twitter.com/adolfo_unturbe"
               target="_blank"
