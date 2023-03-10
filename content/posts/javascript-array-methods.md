@@ -5,6 +5,7 @@ isPublished: true
 publishedDate: 2023/03/02
 tags:
   - Javascript
+  - Array methods
 ---
 
 Los arrays son una estructura de datos fundamental en JavaScript, y hay una gran cantidad de métodos que se pueden utilizar para manipularlos. En este artículo, vamos a ver los métodos de los arrays en JavaScript.

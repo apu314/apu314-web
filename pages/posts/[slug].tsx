@@ -5,10 +5,16 @@ import Post from '../../components/posts/Post'
 import { MainLayout } from '../../layouts'
 
 import { getSinglePost, getAllPublishedPosts } from '../../lib/md'
+import SemanticHead from '../../components/SemanticHead'
 
 const PostPage: NextPage<IPost> = (post) => {
   return (
     <MainLayout classNames="post-container">
+      <SemanticHead
+        title={post.frontmatter.title}
+        description={post.frontmatter.description}
+        keywords={post.frontmatter.tags}
+      />
       <Post post={post} />
     </MainLayout>
   )

@@ -8,8 +8,7 @@
   }
 
   .logo {
-    @apply 
-      h-11
+    @apply h-11
       w-11
       /* w-auto */
       flex 

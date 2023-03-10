@@ -1,7 +1,8 @@
 import Link from 'next/link'
-import { FC, useEffect, useState } from 'react'
+import { type FC, useEffect, useState } from 'react'
 import { HiOutlineHome } from 'react-icons/hi'
 import { DarkModeSwitcher } from '../../components/ui/darkModeSwitcher'
+import { MenuButton } from '../../components/ui/menu'
 
 type Props = {}
 
@@ -23,6 +24,7 @@ const Header: FC<Props> = (props) => {
 
         <nav className="header-nav">
           <DarkModeSwitcher />
+          {/* <MenuButton /> */}
         </nav>
       </div>
     </header>

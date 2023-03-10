@@ -3,13 +3,22 @@
     @apply p-2 cursor-pointer rounded-md hover:shadow-md;
   }
 
+  .social-icon {
+    @apply dark:hover:shadow-gray-900;
+  }
+
   .icon-github {
-    @apply /* hover:text-github */ dark:hover:text-gray-light transition-colors duration-200;
+    @apply social-icon;
+    @apply dark:hover:text-gray-light;
+    @apply transition-colors duration-200;
+
   }
   .icon-linkedin {
+    @apply social-icon;
     @apply hover:text-linkedin transition-colors duration-200;
   }
   .icon-twitter {
+    @apply social-icon;
     @apply hover:text-twitter transition-colors duration-200;
   }
 }

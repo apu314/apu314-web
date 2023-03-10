@@ -7,14 +7,13 @@
 @layer components {
   .menu-button {
     @apply hover:text-314-blue 
-      transition-colors 
-      duration-200
+      transition-shadow
+      duration-100
       /* absolute  */
       /* top-3  */
       /* right-3 */
-      hover:shadow-md
+      shadow-xl
+      hover:shadow-sm
       rounded-md;
   }
-
-  
 }

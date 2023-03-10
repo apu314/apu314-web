@@ -1,10 +1,8 @@
 @layer components {
   .card {
-    border: 1px solid lighten(#eaeaea, 5%);
-    box-shadow: 0 4px 6px rgb(0 0 0 / 4%);
-    border-radius: 8px;
-    padding: 1rem;
-    transition: box-shadow 0.15s ease;
+    @apply rounded shadow-lg shadow-gray-100 dark:shadow-gray-900 transition-shadow duration-300;
+    @apply bg-cerulean-50 dark:bg-gray-500;
+    @apply p-4;
   }
 
   .card:hover {
