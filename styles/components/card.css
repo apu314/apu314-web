@@ -2,8 +2,9 @@
   .card {
     /* @apply rounded shadow-lg shadow-gray-100 dark:shadow-gray-900 transition-shadow duration-300; */
     /* @apply hover:shadow-lg hover:shadow-cerulean-100  dark:shadow-gray-900; */
-    @apply shadow-lg 
-      shadow-cerulean-100 
+    @apply shadow-md
+      hover:shadow-sm
+      shadow-cerulean-100
       dark:shadow-none
       dark:hover:shadow-gray-500
       /* dark:shadow-gray-900 */;

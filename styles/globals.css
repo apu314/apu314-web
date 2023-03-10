@@ -7,8 +7,9 @@
 @tailwind utilities;
 
 :root {
-  font-family: -apple-system, BlinkMacSystemFont, segoe ui, Roboto, 'Helvetica Neue',
-    Arial, sans-serif, 'apple color emoji', 'segoe ui emoji', 'segoe ui symbol';
+  font-family: -apple-system, BlinkMacSystemFont, segoe ui, Roboto,
+    'Helvetica Neue', Arial, sans-serif, 'apple color emoji', 'segoe ui emoji',
+    'segoe ui symbol';
 }
 
 @layer base {
@@ -45,20 +46,18 @@
   }
 }
 
-
-
 @layer components {
   .center-content {
     @apply py-0 px-8;
   }
-  
+
   .link-underline {
     @apply hover:decoration-solid hover:decoration-4 hover:decoration-black hover:dark:decoration-white;
     color: inherit;
     text-decoration: underline 0.123em rgba(0, 0, 0, 0);
     transition: text-decoration-color 300ms;
   }
-  
+
   .link-underline:hover {
     /* text-decoration-color: rgba(0, 0, 0, 1); */
   }
