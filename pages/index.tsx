@@ -21,7 +21,7 @@ const Home: NextPage<Props> = ({ posts }) => {
         description="Página personal de Adolfo Unturbe Pérez, desarrollador Javascript"
       />
       <MainLayout>
-        <main className="container  min-h-full w-full">
+        <main>
           <ProfileHero />
 
           {Boolean(posts.length) && (

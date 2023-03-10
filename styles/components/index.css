@@ -1,19 +1,6 @@
+@import './button.css';
 @import './icon.css';
 @import './card.css';
 @import './post.css';
 @import './profileHero.css';
 @import './darkModeSwitcher.css';
-
-@layer components {
-  .menu-button {
-    @apply hover:text-314-blue 
-      transition-shadow
-      duration-100
-      /* absolute  */
-      /* top-3  */
-      /* right-3 */
-      shadow-xl
-      hover:shadow-sm
-      rounded-md;
-  }
-}

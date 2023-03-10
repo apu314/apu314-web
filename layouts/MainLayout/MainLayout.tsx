@@ -11,9 +11,9 @@ const MainLayout: FC<Props> = (props) => {
   const { children, classNames } = props
 
   return (
-    <div className="min-h-screen">
+    <div className={`${classNames || ''} min-h-screen`}>
       <Header />
-      <div className={`${classNames || ''}`}>{children}</div>
+      {children}
       <Footer />
     </div>
   )

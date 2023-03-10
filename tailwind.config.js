@@ -30,6 +30,7 @@ module.exports = {
         900: '#084872'
       },
       blue: colors.blue,
+      black: '#000',
       purple: colors.purple,
       pink: colors.pink,
       orange: colors.orange,

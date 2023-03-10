@@ -1,17 +1,19 @@
 @layer components {
   .icon {
-    @apply p-2 cursor-pointer rounded-md hover:shadow-md;
+    @apply p-2
+      rounded-md 
+      hover:shadow-md 
+      duration-100;
   }
 
   .social-icon {
-    @apply dark:hover:shadow-gray-900;
+    @apply button dark:hover:shadow-gray-900;
   }
 
   .icon-github {
     @apply social-icon;
     @apply dark:hover:text-gray-light;
     @apply transition-colors duration-200;
-
   }
   .icon-linkedin {
     @apply social-icon;

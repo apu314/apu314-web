@@ -1,17 +1,36 @@
 @layer components {
   .card {
-    @apply rounded shadow-lg shadow-gray-100 dark:shadow-gray-900 transition-shadow duration-300;
-    @apply bg-cerulean-50 dark:bg-gray-500;
-    @apply p-4;
+    /* @apply rounded shadow-lg shadow-gray-100 dark:shadow-gray-900 transition-shadow duration-300; */
+    /* @apply hover:shadow-lg hover:shadow-cerulean-100  dark:shadow-gray-900; */
+    @apply shadow-lg 
+      shadow-cerulean-100 
+      dark:shadow-none
+      dark:hover:shadow-gray-500
+      /* dark:shadow-gray-900 */;
+
+    /* @apply bg-gradient-to-br from-white to-cerulean-50 dark:bg-gray-500; */
+    @apply bg-white dark:bg-gray-700;
+
+    @apply border-2 
+      border-dashed
+      border-transparent 
+      hover:border-cerulean-200 
+      dark:border-solid 
+      dark:hover:border-dashed
+      dark:border-gray-300 
+      dark:hover:border-gray-300;
+
+    @apply transition-all duration-300;
+
+    @apply rounded p-4;
   }
 
   .card:hover {
-    box-shadow: 0 6px 14px rgb(0 0 0 / 8%);
+    /* box-shadow: 0 6px 14px rgb(0 0 0 / 8%); */
   }
-  .card:hover ~ .card-title {
-    text-decoration: underline;
-    text-decoration-thickness: 0.1em;
-    color: #1b8dda;
+  .card:hover .card-title {
+    /* text-decoration: underline;
+    text-decoration-thickness: 0.0955em; */
   }
 
   .card-title {
