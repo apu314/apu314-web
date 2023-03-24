@@ -7,7 +7,7 @@ import Posts from '../components/posts/Posts'
 import ProfileHero from '../components/ProfileHero'
 import SemanticHead from '../components/SemanticHead'
 
-import { getAllPublishedPostsDesc } from '../lib/md'
+import { getAllPublishedPostsAsc } from '../lib/md'
 
 interface Props {
   posts: Post[]
@@ -37,7 +37,7 @@ const Home: NextPage<Props> = ({ posts }) => {
 }
 
 export const getStaticProps: GetStaticProps = async (ctx) => {
-  const posts = await getAllPublishedPostsDesc('content/posts')
+  const posts = getAllPublishedPostsAsc('content/posts')
 
   return {
     props: {

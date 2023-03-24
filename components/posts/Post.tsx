@@ -9,16 +9,16 @@ interface Props {
 }
 
 const Post: FC<Props> = ({ post }) => {
-  const { frontmatter, content } = post
+  const { title, publishedDate, tags, content } = post
 
   const { minutes: readingTime } = useReadingTime(content)
 
   return (
     <article className="article">
-      <h2 className="post-title">{frontmatter.title}</h2>
+      <h2 className="post-title">{title}</h2>
       <div className="meta  grid grid-flow-col justify-start place-items-center gap-2">
         <span className="post-publishDate">
-          {formatToReadableDate(frontmatter.publishedDate)}
+          {formatToReadableDate(publishedDate)}
         </span>
         {readingTime && (
           <>
@@ -26,9 +26,10 @@ const Post: FC<Props> = ({ post }) => {
             <span className="post-readingTime">{`${readingTime} minutos de lectura`}</span>
           </>
         )}
-        {frontmatter.tags && Boolean(frontmatter.tags.length) && (
+        {/* Componente: contribuye a este artículo */}
+        {tags && tags.length && (
           <>
-            -<span className="post-tags">{frontmatter.tags.join(', ')}</span>
+            -<span className="post-tags">{tags.join(', ')}</span>
           </>
         )}
       </div>

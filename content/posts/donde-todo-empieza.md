@@ -3,7 +3,8 @@ title: Donde todo empieza
 description: Presentación de la web apu314.com. Te doy la bienvenida!
 isPublished: true
 publishedDate: 2023/02/25
-tags:
+modifiedDate: 2023/03/24
+type: post
 ---
 
 **¡Hola a todas y todos!** Soy un apasionado programador y estoy emocionado de presentarles mi nueva página web sobre programación con el ecosistema de JavaScript.

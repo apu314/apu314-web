@@ -1,5 +1,6 @@
+import type { FC } from 'react'
 import Link from 'next/link'
-import { type FC, useEffect, useState } from 'react'
+import { useEffect, useState } from 'react'
 import { HiOutlineHome } from 'react-icons/hi'
 import { DarkModeSwitcher } from '../../components/ui/darkModeSwitcher'
 import { MenuButton } from '../../components/ui/menu'

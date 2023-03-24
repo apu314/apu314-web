@@ -4,26 +4,28 @@ import type { Post as IPost } from '../../types/Post'
 import Post from '../../components/posts/Post'
 import { MainLayout } from '../../layouts'
 
-import { getSinglePost, getAllPublishedPosts } from '../../lib/md'
+import { getSinglePost, getAllPublishedPostsFilenames } from '../../lib/md'
 import SemanticHead from '../../components/SemanticHead'
 
 const PostPage: NextPage<IPost> = (post) => {
   return (
     <MainLayout classNames="post-container">
       <SemanticHead
-        title={post.frontmatter.title}
-        description={post.frontmatter.description}
-        keywords={post.frontmatter.tags}
+        title={post.title}
+        description={post.description}
+        keywords={post.tags}
       />
       <Post post={post} />
     </MainLayout>
   )
 }
 
-export const getStaticPaths: GetStaticPaths = async (ctx) => {
-  const paths = await getAllPublishedPosts('content/posts').map(({ slug }) => ({
+export const getStaticPaths: GetStaticPaths = (ctx) => {
+  const postsFileNames = getAllPublishedPostsFilenames('content/posts')
+
+  const paths = postsFileNames.map((filename) => ({
     params: {
-      slug
+      slug: filename
     }
   }))
 
@@ -33,9 +35,9 @@ export const getStaticPaths: GetStaticPaths = async (ctx) => {
   }
 }
 
-export const getStaticProps: GetStaticProps = async ({ params }) => {
+export const getStaticProps: GetStaticProps = ({ params }) => {
   const { slug } = params as { slug: string }
-  const post = await getSinglePost(slug, 'content/posts')
+  const post = getSinglePost(slug, 'content/posts')
 
   return {
     props: {

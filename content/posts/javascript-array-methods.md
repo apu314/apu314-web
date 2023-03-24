@@ -1,11 +1,14 @@
 ---
 title: Javascript Array methods
 description: Explicación de los distintos métodos de los arrays en javascript
-isPublished: true
+isPublished: false
 publishedDate: 2023/03/02
+modifiedDate: 2023/03/24
+slug: javascript-array-methods
 tags:
   - Javascript
   - Array methods
+type: post
 ---
 
 Los arrays son una estructura de datos fundamental en JavaScript, y hay una gran cantidad de métodos que se pueden utilizar para manipularlos. En este artículo, vamos a ver los métodos de los arrays en JavaScript.
@@ -20,14 +23,33 @@ const myArray = [1, 2, 3, 4, 5]
 
 JavaScript proporciona una gran cantidad de métodos integrados para trabajar con los arrays. Algunos de los métodos más comunes son los siguientes:
 
+## at()
+
+El método at() recibe un índice y retorna el valor del array en esa posición
+
+```javascript
+const myArray = ['Hola', 'estamos', 'usando', 'el método at() delos arrays']
+const valueAtPosition1 = myArray.at(1) // `estamos`
+```
+
+## concat()
+
+El método concat() se utiliza para unir dos o más arrays retornando el nuevo array
+
+```javascript
+const array1 = [1, 2, 3]
+const array2 = [4, 5, 6]
+const mergedArray = array1.concat(array2) // [1, 2, 3, 4, 5, 6]
+```
+
 ## push() y pop()
 
 Los métodos push() y pop() se utilizan para agregar y eliminar elementos desde el final de un array, respectivamente:
 
 ```javascript
 const myArray = [1, 2, 3]
-myArray.push(4) // myArray es ahora [1, 2, 3, 4]
-myArray.pop() // myArray es ahora [1, 2, 3]
+myArray.push(4) // [1, 2, 3, 4]
+myArray.pop() // [1, 2, 3]
 ```
 
 ## shift() y unshift()
@@ -36,8 +58,8 @@ Los métodos shift() y unshift() se utilizan para agregar y eliminar elementos d
 
 ```javascript
 const myArray = [1, 2, 3]
-myArray.unshift(0) // myArray es ahora [0, 1, 2, 3]
-myArray.shift() // myArray es ahora [1, 2, 3]
+myArray.unshift(0) // [0, 1, 2, 3]
+myArray.shift() // [1, 2, 3]
 ```
 
 ## splice()
@@ -46,7 +68,7 @@ El método splice() se utiliza para agregar, eliminar o reemplazar elementos de 
 
 ```javascript
 const myArray = [1, 2, 3]
-myArray.splice(1, 1, 'hello') // myArray es ahora [1, 'hello', 3]
+myArray.splice(1, 1, 'hello') // [1, 'hello', 3]
 ```
 
 Este método toma tres argumentos: la posición de inicio, el número de elementos a eliminar y los elementos a agregar.
@@ -57,7 +79,7 @@ El método slice() se utiliza para crear una copia de un subconjunto de elemento
 
 ```javascript
 const myArray = [1, 2, 3, 4, 5]
-const newArray = myArray.slice(1, 3) // newArray es [2, 3]
+const newArray = myArray.slice(1, 3) // [2, 3]
 ```
 
 Este método toma dos argumentos: la posición de inicio y la posición final.
@@ -68,7 +90,7 @@ El método map() se utiliza para crear un nuevo array que contiene los resultado
 
 ```javascript
 const myArray = [1, 2, 3]
-const newArray = myArray.map((element) => element * 2) // newArray es [2, 4, 6]
+const newArray = myArray.map((element) => element * 2) // [2, 4, 6]
 ```
 
 Este método toma una función como argumento, que se ejecuta para cada elemento del array.
@@ -79,7 +101,7 @@ El método filter() se utiliza para crear un nuevo array que contiene todos los 
 
 ```javascript
 const myArray = [1, 2, 3, 4, 5]
-const newArray = myArray.filter((element) => element > 3) // newArray es [4, 5]
+const newArray = myArray.filter((element) => element > 3) // [4, 5]
 ```
 
 Este método toma una función como argumento,
@@ -94,7 +116,7 @@ El método reduce() se utiliza para reducir un array a un único valor mediante 
 const myArray = [1, 2, 3]
 const result = myArray.reduce(
   (accumulator, currentValue) => accumulator + currentValue
-) // result es 6
+) // 6
 ```
 
 Este método toma una función acumuladora como argumento, que se ejecuta para cada elemento del array y acumula un valor final.
@@ -105,7 +127,7 @@ El método forEach() se utiliza para ejecutar una función para cada elemento de
 
 ```javascript
 const myArray = [1, 2, 3]
-myArray.forEach((element) => console.log(element)) // imprime 1, 2, 3
+myArray.forEach((element) => console.log(element)) // tres console.log respectivamente: 1, 2, 3
 ```
 
 Este método toma una función como argumento, que se ejecuta para cada elemento del array.
