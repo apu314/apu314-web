@@ -1,11 +1,10 @@
 ---
 title: Cómo utilizar el método 'filter' en JavaScript
-description:
-  Vemos varios ejemplos con distintos niveles de dificultad a la hora de filtrar
+description: Vemos varios ejemplos con distintos niveles de dificultad a la hora de filtrar
   elementos en un array con el método filter()
-isPublished: false
+isPublished: true
 publishedDate: 2023/03/27
-modifiedDate: 2023/03/24
+modifiedDate: 2023/03/29
 type: post
 tags:
   - Array
