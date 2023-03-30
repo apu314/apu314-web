@@ -4,7 +4,7 @@ description: Vemos varios ejemplos con distintos niveles de dificultad a la hora
   elementos en un array con el método filter()
 isPublished: true
 publishedDate: 2023/03/27
-modifiedDate: 2023/03/29
+modifiedDate: 2023/03/30
 type: post
 tags:
   - Array
@@ -13,11 +13,14 @@ tags:
 
 En programación, es común tener que trabajar con listas de elementos, y a menudo, necesitamos filtrar los elementos de una lista según ciertas condiciones. En JavaScript, el método filter() nos permite hacer precisamente eso: filtrar elementos de un array según un criterio determinado. En este artículo, exploraremos cómo utilizar el método filter() en JavaScript para filtrar elementos de un array, con ejemplos de distintas dificultades.
 
-¿Qué es el método filter()?
+## ¿Qué es el método filter()?
+
 El método filter() es un método de los arrays en JavaScript que crea un nuevo array con todos los elementos que cumplan una condición dada por una función. La función de filtrado es pasada como un argumento al método filter(). La función debe devolver un valor booleano que indica si el elemento debe ser incluido en el nuevo array.
 
-Ejemplos de uso del método filter():
-Ejemplo sencillo:
+## Ejemplos de uso del método filter()
+
+### Ejemplo sencillo
+
 Supongamos que tenemos un array de números y queremos crear un nuevo array con los números pares. Podemos usar el método filter() para lograr esto de la siguiente manera:
 
 ```javascript
@@ -28,7 +31,8 @@ console.log(numerosPares) // [2, 4, 6, 8, 10]
 
 La función de filtrado que pasamos a filter() toma cada elemento del array original y devuelve true si el elemento es par (es decir, si el resto de la división por 2 es 0).
 
-Ejemplo intermedio:
+### Ejemplo intermedio
+
 Supongamos que tenemos un array de objetos que representan personas con sus respectivos nombres y edades, y queremos crear un nuevo array con los objetos que tienen una edad mayor o igual a 18. Podemos usar el método filter() de la siguiente manera:
 
 ```javascript
@@ -45,7 +49,8 @@ console.log(personasMayoresDeEdad) // [{ nombre: 'Juan', edad: 25 }, { nombre: '
 
 En este caso, la función de filtrado comprueba si la edad de cada persona es mayor o igual a 18, y devuelve true si es así.
 
-Ejemplo avanzado:
+### Ejemplo avanzado
+
 Supongamos que tenemos un array de objetos que representan productos con sus respectivos nombres, precios y stock, y queremos crear un nuevo array con los productos que están en stock y cuyo precio es menor o igual a 100. Podemos usar el método filter() de la siguiente manera:
 
 ```javascript
@@ -64,5 +69,6 @@ console.log(productosEnStockMenoresA100) // [{ nombre: 'Camisa', precio: 35, sto
 
 En este ejemplo, la función de filtrado comprueba si el producto tiene stock y si su precio es menor o igual a 100. Solo los productos que cumplen ambas condiciones son incluidos en el nuevo array.
 
-Conclusión
+## Conclusión
+
 El método filter() es una herramienta muy útil en JavaScript para filtrar elementos de un array según ciertas condiciones. En este artículo, hemos visto distintos ejemplos de cómo utilizar el método filter(), desde un ejemplo sencillo hasta uno más avanzado. Espero que estos ejemplos hayan sido útiles para entender mejor cómo utilizar este método en tus proyectos de JavaScript.
