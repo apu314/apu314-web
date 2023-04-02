@@ -4,7 +4,7 @@ description: Vemos varios ejemplos con distintos niveles de dificultad a la hora
   elementos en un array con el método filter()
 isPublished: true
 publishedDate: 2023/03/27
-modifiedDate: 2023/03/30
+modifiedDate: 2023/04/02
 type: post
 tags:
   - Array
