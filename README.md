@@ -1,5 +1,3 @@
-![Vercel](https://vercelbadge.vercel.app/api/apu314/apu314-web)
-
 Code repository for my personal web [apu314.com](https://apu314.com/)
 
 ## Getting Started
