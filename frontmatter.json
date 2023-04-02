@@ -14,11 +14,7 @@
     "type": "boolean",
     "invert": true
   },
-  "frontMatter.taxonomy.tags": [
-    "Array",
-    "Javascript",
-    "filter"
-  ],
+  "frontMatter.taxonomy.tags": ["Array", "Javascript", "filter"],
   "frontMatter.taxonomy.dateFormat": "YYYY/MM/DD",
   "frontMatter.taxonomy.contentTypes": [
     {
