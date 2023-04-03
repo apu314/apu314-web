@@ -7,7 +7,6 @@ import {
   getFrontmatter,
   isPublished
 } from '../helpers/markdown'
-import fs from 'fs'
 
 export const getAllPosts = (folder: string): PostFrontmatter[] => {
   const posts = getAllFilesFromFolder(folder) as PostFrontmatter[]
