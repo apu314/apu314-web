@@ -1,0 +1,38 @@
+name: Lint and Format
+on: push
+  # push:
+  #   branches:
+  #     - main
+  # pull_request:
+  #   branches: [main]
+
+permissions:
+  contents: write
+jobs:
+  format:
+    runs-on: ubuntu-latest
+    steps:
+      - name: 🛎️ Checkout
+        uses: actions/checkout@v2
+        # with:
+        #   ref: ${{ github.head_ref }}
+
+      - name: 🛠️ Setup Node
+        uses: actions/setup-node@v1
+        with:
+          node-version: '18.x'
+
+      - name: 🛠️ Install dependencies...
+        run: yarn run ci
+
+      - name: Lint & fix
+        run: yarn run lint --fix
+
+      - name: ⚙️ Format with Prettier
+        run: yarn run format
+
+      - name: ✏️ Commit changes
+        uses: stefanzweifel/git-auto-commit-action@v4.1.2
+        with:
+          commit_message: ♻️ Apply formatting changes
+          branch: ${{ github.head_ref }}
