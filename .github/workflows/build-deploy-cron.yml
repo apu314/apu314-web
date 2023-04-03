@@ -2,7 +2,7 @@ name: Build and Deploy Cron
 
 on:
   schedule:
-    - cron: '39 1 * * 1'
+    - cron: '43 2 * * 1'
   workflow_dispatch:
 
 jobs:
