@@ -14,19 +14,18 @@ console.log(
   process.env.ALGOLIA_SEARCH_ADMIN_KEY
 )
 
-const index = client.initIndex('BLOG_POSTS')(
-  // console.log('index -->', index)
+const index = client.initIndex('BLOG_POSTS')
+// console.log('index -->', index)
 
-  async function () {
-    const posts = getAllPublishedPostsAsc('content/posts')
-    console.log(posts)
-    await index
-      .saveObjects(posts, {
-        autoGenerateObjectIDIfNotExist: true
-      })
-      .then(({ objectIDs }) => {
-        console.log(objectIDs)
-      })
-      .catch(console.error)
-  }
-)()
+module.exports = async () => {
+  const posts = getAllPublishedPostsAsc('content/posts')
+  console.log(posts)
+  await index
+    .saveObjects(posts, {
+      autoGenerateObjectIDIfNotExist: true
+    })
+    .then(({ objectIDs }) => {
+      console.log(objectIDs)
+    })
+    .catch(console.error)
+}
