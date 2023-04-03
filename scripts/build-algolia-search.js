@@ -1,5 +1,6 @@
 require('dotenv').config()
 const algoliasearch = require('algoliasearch')
+const { getAllPublishedPostsAsc } = require('../lib/md')
 
 const client = algoliasearch(
   process.env.NEXT_PUBLIC_ALGOLIA_APP_ID,
