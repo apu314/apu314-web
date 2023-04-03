@@ -1,5 +1,6 @@
 name: Lint and Format
-on: push
+on:
+  push
   # push:
   #   branches:
   #     - main
@@ -9,7 +10,7 @@ on: push
 permissions:
   contents: write
 jobs:
-  format:
+  lint-format:
     runs-on: ubuntu-latest
     steps:
       - name: 🛎️ Checkout
