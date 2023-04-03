@@ -5,19 +5,10 @@ const client = algoliasearch(
   process.env.NEXT_PUBLIC_ALGOLIA_APP_ID,
   process.env.ALGOLIA_SEARCH_ADMIN_KEY
 )
-console.log(
-  'NEXT_PUBLIC_ALGOLIA_APP_ID --> ',
-  process.env.NEXT_PUBLIC_ALGOLIA_APP_ID
-)
-console.log(
-  'ALGOLIA_SEARCH_ADMIN_KEY --> ',
-  process.env.ALGOLIA_SEARCH_ADMIN_KEY
-)
 
 const index = client.initIndex('BLOG_POSTS')
-// console.log('index -->', index)
 
-module.exports = async () => {
+const saveObjectsToAlgolia = async () => {
   const posts = getAllPublishedPostsAsc('content/posts')
   console.log(posts)
   await index
@@ -29,3 +20,5 @@ module.exports = async () => {
     })
     .catch(console.error)
 }
+
+saveObjectsToAlgolia()
