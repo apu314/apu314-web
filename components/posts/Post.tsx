@@ -1,6 +1,6 @@
 import { FC } from 'react'
 import { Post as IPost } from '../../types/Post'
-import Markdown from '../../components/markdown/Markdown'
+import { Markdown } from '../../components'
 import { formatToReadableDate } from '../../helpers/dateHelper'
 import { useReadingTime } from 'react-hook-reading-time'
 

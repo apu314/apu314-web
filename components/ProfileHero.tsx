@@ -27,7 +27,7 @@ const ProfileHero: FC<Props> = (props) => {
             <span className="link-underline">apu314</span>
           </h1>
           <h2 className="text-xl font-light mt-4">
-            Sofware developer & passionate about JS world
+            Sofware developer & passionate about JavasScript
           </h2>
         </div>
 

@@ -1,10 +1,10 @@
 import type { GetStaticProps, NextPage } from 'next'
 import type { Post } from '../types/Post'
 
-import ProfileHero from '../components/ProfileHero'
-import SemanticHead from '../components/SemanticHead'
-import Posts from '../components/posts/Posts'
-import MainLayout from '../layouts/MainLayout'
+import { ProfileHero } from '../components'
+import { SemanticHead } from '../components'
+import { Posts } from '../components/posts'
+import { MainLayout } from '../layouts/MainLayout'
 import { getAllPublishedPostsAsc } from '../lib/md'
 
 interface Props {

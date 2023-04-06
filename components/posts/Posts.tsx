@@ -1,6 +1,6 @@
 import { FC } from 'react'
 import { Post as IPost } from '../../types/Post'
-import PostCard from './PostCard'
+import { PostCard } from './'
 
 interface Props {
   posts: IPost[]

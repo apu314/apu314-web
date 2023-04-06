@@ -5,7 +5,7 @@ import Post from '../../components/posts/Post'
 import { MainLayout } from '../../layouts'
 
 import { getSinglePost, getAllPublishedPostsFilenames } from '../../lib/md'
-import SemanticHead from '../../components/SemanticHead'
+import { SemanticHead } from '../../components'
 
 const PostPage: NextPage<IPost> = (post) => {
   return (
