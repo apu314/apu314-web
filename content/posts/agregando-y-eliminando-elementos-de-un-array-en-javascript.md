@@ -77,9 +77,9 @@ En este ejemplo hemos visto cómo podemos eliminar o, más bien sustituir, eleme
 Este método de array nos va a permitir **eliminar el elemento en la primera posición** (0) del array original, retornando el elemento eliminado. Por tanto, lo que queda modificado es el array original. Veamos un ejemplo:
 
 ```jsx
-const numeros = [1, 2, 3];
-numeros.shift();
-console.log(numeros); // [2, 3]
+const numeros = [1, 2, 3]
+numeros.shift()
+console.log(numeros) // [2, 3]
 ```
 
 ## Bonus: Extrayendo elementos de un array con ‘slice’
