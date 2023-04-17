@@ -9,6 +9,7 @@ tags:
   - Array
   - Javascript
 ---
+
 ¡Bienvenidos a una nueva entrada del blog! En esta ocasión, hablaremos sobre las distintas formas de iterar los arrays en Javascript.
 
 Un array es una estructura de datos que permite almacenar una colección de elementos en una sola variable. En la mayoría de los casos, necesitaremos recorrer los elementos de un array para procesarlos de alguna manera. A continuación, veremos las diferentes formas de iterar los arrays en Javascript
