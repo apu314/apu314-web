@@ -8,12 +8,28 @@ import { getSinglePost, getAllPublishedPostsFilenames } from '../../lib/md'
 import { SemanticHead } from '../../components'
 
 const PostPage: NextPage<IPost> = (post) => {
+  const jsonLD = {
+    '@context': 'https://schema.org',
+    '@type': 'BlogPosting',
+    headline: post.title,
+    description: post.description,
+    datePublished: post.publishedDate,
+    keywords: post.tags.join(', '),
+    articleBody: post.content,
+    author: {
+      '@type': 'Person',
+      name: 'Adolfo Unturbe Pérez',
+      brand: 'apu314'
+    }
+  }
+
   return (
     <MainLayout classNames="post-container">
       <SemanticHead
         title={post.title}
         description={post.description}
         keywords={post.tags}
+        jsonLD={jsonLD}
       />
       <Post post={post} />
     </MainLayout>
