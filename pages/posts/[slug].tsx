@@ -14,7 +14,7 @@ const PostPage: NextPage<IPost> = (post) => {
     headline: post.title,
     description: post.description,
     datePublished: post.publishedDate,
-    keywords: post.tags.join(', '),
+    keywords: post.tags ? post.tags.join(', ') : '',
     articleBody: post.content,
     author: {
       '@type': 'Person',
