@@ -12,7 +12,7 @@ tags:
 
 Hola de nuevo!
 
-Alguna vez has necesitado *‘darle la vuelta’* (o invertir los elementos) de un array en javascript? Te traigo algunas formas de hacerlo y unos ejemplos sencillos para entenderlo mejor.
+Alguna vez has necesitado _‘darle la vuelta’_ (o invertir los elementos) de un array en javascript? Te traigo algunas formas de hacerlo y unos ejemplos sencillos para entenderlo mejor.
 
 ## reverse()
 
@@ -36,7 +36,7 @@ const reversedArray = []
 for (let i = originalArray.length - 1; i >= 0; i--) {
   reversedArray.push(originalArray[i])
 }
-console.log(reversedArray); // [5, 4, 3, 2, 1]
+console.log(reversedArray) // [5, 4, 3, 2, 1]
 ```
 
 ## reduce()
@@ -57,10 +57,9 @@ En cada iteración estamos añadiendo el siguiente valor de la iteración y espa
 ```jsx
 const originalArray = [1, 2, 3, 4, 5]
 
-const reversedArray = originalArray.reduce(
-  (accumulator, currentValue) => {
-    return [currentValue, ...accumulator]
-  }, [])
+const reversedArray = originalArray.reduce((accumulator, currentValue) => {
+  return [currentValue, ...accumulator]
+}, [])
 ```
 
 ## Conclusión
