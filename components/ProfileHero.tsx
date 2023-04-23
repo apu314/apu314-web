@@ -1,7 +1,7 @@
 import { FC } from 'react'
 import Image from 'next/image'
 
-import { FiGithub, FiLinkedin, FiTwitter } from 'react-icons/fi'
+import { FiGithub, FiLinkedin, FiTwitter, FiInstagram } from 'react-icons/fi'
 
 type Props = {}
 
@@ -63,6 +63,18 @@ const ProfileHero: FC<Props> = (props) => {
               rel="noopener noreferrer"
             >
               <FiTwitter
+                size={22}
+                // color={'#1A8CD8'}
+              />
+            </a>
+          </li>
+          <li className="icon icon-instagram">
+            <a
+              href="https://instagram.com/apu314"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <FiInstagram
                 size={22}
                 // color={'#1A8CD8'}
               />
