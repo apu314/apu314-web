@@ -16,10 +16,12 @@ const PostPage: NextPage<IPost> = (post) => {
     datePublished: post.publishedDate,
     keywords: post.tags ? post.tags.join(', ') : '',
     articleBody: post.content,
+    // image: '' // TODO: implement image in jsonLD
     author: {
       '@type': 'Person',
       name: 'Adolfo Unturbe Pérez',
-      brand: 'apu314'
+      brand: 'apu314',
+      url: 'https://apu314.com'
     }
   }
 
