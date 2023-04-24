@@ -44,6 +44,13 @@
     border-radius: 6px;
     margin-bottom: 2rem;
   }
+
+  ul {
+    @apply list-disc;
+
+    padding-left: 1rem;
+    margin-bottom: 2rem;
+  }
 }
 
 @layer components {
