@@ -31,7 +31,7 @@ const ProfileHero: FC<Props> = (props) => {
           </h2>
         </div>
 
-        <ul className="list-nonelist-none m-0 pl-0 social-links  flex flex-row py-2">
+        <ul className="list-none m-0 pl-0 social-links  flex flex-row py-2">
           <li className="icon icon-github">
             <a
               href="https://github.com/apu314"
