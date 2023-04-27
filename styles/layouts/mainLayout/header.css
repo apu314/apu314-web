@@ -1,6 +1,6 @@
 @layer components {
   header.header {
-    @apply container py-4 mb-8 mx-auto;
+    @apply container center-content py-4 mb-8 mx-auto;
   }
 
   .header-inner {

@@ -15,7 +15,7 @@ const Header: FC<Props> = (props) => {
   }, [])
 
   return (
-    <header className="header center-content">
+    <header className="header">
       <div className="header-inner">
         <Link href={'/'} className={`logo ${isHomePage ? 'invisible' : ''}`}>
           <picture>
