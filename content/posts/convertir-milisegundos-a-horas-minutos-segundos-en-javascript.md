@@ -20,7 +20,7 @@ Antes que nada debemos tener en cuenta lo siguiente:
 
 - 1 segundo son 1000 milisegundos, por tanto debemos dividir los milisegundos entre 1000
 - 1 minuto son 60 segundos. Dividiremos los segundos entre 60
-- 1 hora son 60 minutos. Dividimos los minutos  entre 60
+- 1 hora son 60 minutos. Dividimos los minutos entre 60
 - Para los valores menores a 10 debemos añadir un cero delante, por tanto crearemos una función para hacer esto
 
 ```jsx
