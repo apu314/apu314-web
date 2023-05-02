@@ -3,7 +3,7 @@ title: Convertir milisegundos a horas, minutos y segundos en Javascript
 description: Aprende a trabajar con fechas en javascript, dados unos milisegundos y convirtiéndolos al formato HH:MM:SS
 isPublished: true
 publishedDate: 2023/05/01
-modifiedDate: 2023/05/01
+modifiedDate: 2023/05/02
 type: post
 tags:
   - Fechas
@@ -24,7 +24,7 @@ Antes que nada debemos tener en cuenta lo siguiente:
 - Para los valores menores a 10 debemos añadir un cero delante, por tanto crearemos una función para hacer esto
 
 ```jsx
-const padToTwoDigits = (num: string) => {
+const padToTwoDigits = (num: number) => {
   return num.toString().padStart(2, '0')
 }
 
