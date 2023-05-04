@@ -3,7 +3,7 @@ title: Convertir milisegundos a horas, minutos y segundos en Javascript
 description: Aprende a trabajar con fechas en javascript, dados unos milisegundos y convirtiéndolos al formato HH:MM:SS
 isPublished: true
 publishedDate: 2023/05/01
-modifiedDate: 2023/05/02
+modifiedDate: 2023/05/04
 type: post
 tags:
   - Fechas
@@ -22,6 +22,16 @@ Antes que nada debemos tener en cuenta lo siguiente:
 - 1 minuto son 60 segundos. Dividiremos los segundos entre 60
 - 1 hora son 60 minutos. Dividimos los minutos entre 60
 - Para los valores menores a 10 debemos añadir un cero delante, por tanto crearemos una función para hacer esto
+
+Cuando leas el código a continuación, puede ser que te preguntes por qué hacemos el módulo de los segundos, minutos y horas.
+
+Es posible que en los milisegundos dados, haya algunos segundos restantes que sean menos de un minuto, o algunos minutos restantes que sean menos de una hora, o algunas horas restantes que sean menos de un día.
+
+Entonces, para ser precisos debemos calcular estos segundos, minutos y horas restantes usando el operador módulo, el cual devuelve el resto de una operación de división. En este código, usamos el operador módulo para calcular el resto de dividir el número de segundos por 60, el número de minutos por 60 y el número de horas por 24.
+
+Esto nos da los segundos, minutos y horas restantes que son menos de un minuto, menos de una hora y menos de un día, respectivamente.
+
+Veamos el ejemplo de código
 
 ```jsx
 const padToTwoDigits = (num: number) => {
