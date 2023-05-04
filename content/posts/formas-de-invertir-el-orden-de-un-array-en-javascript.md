@@ -3,7 +3,7 @@ title: Distintas formas de invertir el orden de los elementos de un array en Jav
 description: Vemos cómo invertir el orden en los arrays en javascript con ejemplos sencillos
 isPublished: true
 publishedDate: 2023/04/24
-modifiedDate: 2023/04/24
+modifiedDate: 2023/05/04
 type: post
 tags:
   - Array
@@ -16,13 +16,45 @@ Alguna vez has necesitado _‘darle la vuelta’_ (o invertir los elementos) de 
 
 ## reverse()
 
-El método `reverse()` propio de los arrays muta el original, además de devolver el mismo cambiando el orden del array original.
+El método `reverse()` propio de los arrays muta el original, además de devolver la referencia al array original.
 
 ```jsx
 const originalArray = [1, 2, 3, 4, 5]
-const reversedArray = originalArray.reverse()
-console.log(reversedArray) // [5, 4, 3, 2, 1]
-console.log(originalArray) // [5, 4, 3, 2, 1]
+const reversed = originalArray.reverse()
+console.log('originalArray', originalArray) // [ 5, 4, 3, 2, 1 ]
+console.log('reversed', reversed) // [ 5, 4, 3, 2, 1 ]
+
+originalArray.push(6)
+console.log('originalArray.push(6)-->', originalArray) // [ 5, 4, 3, 2, 1, 6 ]
+console.log('reversed -->', reversed) // [ 5, 4, 3, 2, 1, 6 ]
+```
+
+En cambio, si hacemos un spread del array original, estamos creando un nuevo array. De esta forma no mutamos el array original.
+
+```javascript
+const originalArray1 = [1, 2, 3, 4, 5]
+const reversedArray = [...originalArray1].reverse()
+
+console.log('originalArray', originalArray) // [ 1, 2, 3, 4, 5 ]
+console.log('reversed', reversed) // [ 5, 4, 3, 2, 1 ]
+
+originalArray.push(6)
+console.log('originalArray.push(6)-->', originalArray) // [ 1, 2, 3, 4, 5, 6 ]
+console.log('reversed -->', reversed) // [ 5, 4, 3, 2, 1 ]
+```
+
+## toReversed()
+
+Este método hace lo mismo que en el spread operator, devuelve un nuevo array invertido, sin mutar el original.
+
+```javascript
+const reversed = originalArray.toReversed()
+console.log('originalArray', originalArray) // [ 1, 2, 3, 4, 5 ]
+console.log('reversed', reversed) // [ 5, 4, 3, 2, 1 ]
+
+originalArray.push(6)
+console.log('originalArray.push(6)-->', originalArray) // [ 1, 2, 3, 4, 5, 6 ]
+console.log('reversed -->', reversed) // [ 5, 4, 3, 2, 1 ]
 ```
 
 ## for()
@@ -64,4 +96,4 @@ const reversedArray = originalArray.reduce((accumulator, currentValue) => {
 
 ## Conclusión
 
-Existen varias formas de invertir el orden de los arrays en Javascript, desde el método `reverse()`, hasta el uso del bucle `for` y el método `reduce()`, el cual es muy interesante de aprender. Es importante tener en cuenta que el uso de cada una de estas formas puede tener un impacto distinto en el rendimiento de la aplicación, por lo que es necesario evaluar la mejor opción según las necesidades del proyecto. Siendo el método `reverse()` el más óptimo porque es una función propia del lenguaje y está optimizada para ello
+Existen varias formas de invertir el orden de los arrays en Javascript, desde el método `reverse()`, `toReversed()` hasta el uso del bucle `for`, el *spread* operator y el método `reduce()`, el cual es muy interesante de aprender. Es importante tener en cuenta que el uso de cada una de estas formas puede tener un impacto distinto en el rendimiento de la aplicación, por lo que es necesario evaluar la mejor opción según las necesidades del proyecto. En mi opinión soy fan del spread operator, pero habría que ver el impacto que puede causar con arrays complejos. Aún así usar el método `reverse()` veo que es el más óptimo porque es una función propia del lenguaje y está optimizada para ello
