@@ -44,7 +44,6 @@ const regex = /Hola/
 
 console.log(regex.test('Hola mundo')) // true
 console.log(regex.test('Hasta luego')) // false
-
 ```
 
 Veremos que nuestro regex lo podemos modificar con infinidad de combinaciones para realizar las validaciones que necesitemos.
@@ -62,7 +61,7 @@ A continuación te muestro algunos de los metacaracteres y cuantificadores que p
 Verás que puedes crear cosas como esta, en la que se permiten 1 o más caracteres “o”, después de la “g” y antes de la “d”; y entre corchetes se especifica que, tras la “d”, podemos añadir cualquiera de las vocales sin máximo ni mínimo en el número de vocales que podemos añadir tras la letra”d”
 
 ```jsx
-const regex = /go+d[aeiou]/;
+const regex = /go+d[aeiou]/
 
 console.log(regex.test('god')) // false
 console.log(regex.test('good')) // true
@@ -84,12 +83,12 @@ const regexEmail = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/
 const regexPassword = /^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{8,}$/
 ```
 
-Te animo a que pruebes estas RegEx en alguno de los sitios que te dejo a continuación, donde además de  explicarlo de una forma muy fácil, tienes recursos para indagar más.
+Te animo a que pruebes estas RegEx en alguno de los sitios que te dejo a continuación, donde además de explicarlo de una forma muy fácil, tienes recursos para indagar más.
 
 - [https://regexr.com/](https://regexr.com/)
 - [https://regex101.com](https://regex101.com/)
 
-Puedes consultar también la página de [Mozilla Developer Network (MDN)]([https://developer.mozilla.org/es/docs/Web/JavaScript/Reference/Global_Objects/RegExp](https://developer.mozilla.org/es/docs/Web/JavaScript/Reference/Global_Objects/RegExp)), en la que se describe en mayor profundidad el objet RegEx
+Puedes consultar también la página de [Mozilla Developer Network (MDN)](<[https://developer.mozilla.org/es/docs/Web/JavaScript/Reference/Global_Objects/RegExp](https://developer.mozilla.org/es/docs/Web/JavaScript/Reference/Global_Objects/RegExp)>), en la que se describe en mayor profundidad el objet RegEx
 
 ## Conclusión
 
