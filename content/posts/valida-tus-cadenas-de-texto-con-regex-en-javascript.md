@@ -3,7 +3,7 @@ title: Valida tus cadenas de texto con RegEx
 description: En esta entrega vemos una introducción a las RegEx, conceptos básicos, unos enlaces interesantes para seguir aprendiendo y extensiones de vscode
 isPublished: true
 publishedDate: 2023/05/08
-modifiedDate: 2023/05/08
+modifiedDate: 2023/05/09
 type: post
 tags:
   - Fechas
@@ -96,7 +96,7 @@ En resumen, las expresiones regulares en Javascript son una poderosa herramienta
 
 ### Sorpresa 🎉
 
-Como has llego hasta aquí, te dejo dos extensiones VSCode para probar expresiones regulares, que seguro encontrarás de utilidad
+Como has llegado hasta aquí, te dejo dos extensiones VSCode para probar expresiones regulares, que seguro encontrarás de utilidad
 
 - [https://marketplace.visualstudio.com/items?itemName=chrmarti.regex](https://marketplace.visualstudio.com/items?itemName=chrmarti.regex)
 - [https://marketplace.visualstudio.com/items?itemName=LouisWT.regexp-preview](https://marketplace.visualstudio.com/items?itemName=LouisWT.regexp-preview)
