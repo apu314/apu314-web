@@ -42,7 +42,7 @@ Supón que tienes un formulario con un campo de entrada de texto que realiza una
 ```jsx
 const debounce = (func, delay) = {
   let timer
-  
+
   return () => {
     clearTimeout(timer)
     timer = setTimeout(func, delay)
@@ -74,7 +74,8 @@ import { useState, useEffect } from 'react'
 const SearchComponent = () => {
   const [searchTerm, setSearchTerm] = useState('')
 
-  const searchDatabase = () => {    // Lógica para buscar en la base de datos
+  const searchDatabase = () => {
+    // Lógica para buscar en la base de datos
     console.log('Realizando búsqueda en la base de datos...')
     // ...
   }
@@ -92,7 +93,7 @@ const SearchComponent = () => {
 
   return (
     <div>
-      <input type='text' value={searchTerm} onChange={handleSearchChange} />
+      <input type="text" value={searchTerm} onChange={handleSearchChange} />
     </div>
   )
 }
