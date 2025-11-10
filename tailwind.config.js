@@ -15,6 +15,8 @@ module.exports = {
       linkedin: '#0A66C2',
       twitter: '#1A8CD8',
       '314-blue': '#1b8dda',
+      '314-blue-2': '#21a5de',
+      '314-blue-bright': '#199AFC',
       //
       white: colors.white,
       cerulean: {
