@@ -68,6 +68,8 @@ export const getAllFilesFromFolder = (folder: string) => {
 }
 
 export const isPublished = (frontmatter: PostFrontmatter) => {
+  if (!frontmatter.publishedDate) return false
+
   const publishedDate = new Date(frontmatter.publishedDate).getTime()
   const now = new Date().getTime()
 
