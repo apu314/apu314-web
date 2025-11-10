@@ -1,0 +1,13 @@
+name: Build and Deploy Cron
+
+on:
+  schedule:
+    - cron: 40 0 * * 1
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Build & Deploy hook request
+        run: curl -X POST -d {} ${{secrets.BUILD_DEPLOY_HOOK}}

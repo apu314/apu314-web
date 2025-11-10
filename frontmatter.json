@@ -1,0 +1,66 @@
+{
+  "$schema": "https://frontmatter.codes/frontmatter.schema.json",
+  "frontMatter.content.wysiwyg": true,
+  "frontMatter.content.autoUpdateDate": true,
+  "frontMatter.content.fmHighlight": true,
+  "frontMatter.content.pageFolders": [
+    {
+      "title": "content",
+      "path": "[[workspace]]/content"
+    }
+  ],
+  "frontMatter.content.draftField": {
+    "name": "isPublished",
+    "type": "boolean",
+    "invert": true
+  },
+  "frontMatter.taxonomy.dateFormat": "YYYY/MM/DD",
+  "frontMatter.taxonomy.contentTypes": [
+    {
+      "name": "post",
+      "pageBundle": false,
+      "fileType": "md",
+      "fields": [
+        {
+          "title": "title",
+          "name": "title",
+          "type": "string"
+        },
+        {
+          "title": "description",
+          "name": "description",
+          "type": "string"
+        },
+        {
+          "title": "isPublished",
+          "name": "isPublished",
+          "type": "draft"
+        },
+        {
+          "title": "publishedDate",
+          "name": "publishedDate",
+          "type": "datetime",
+          "isPublishDate": true
+        },
+        {
+          "title": "modifiedDate",
+          "name": "modifiedDate",
+          "type": "datetime",
+          "isModifiedDate": true
+        },
+        {
+          "title": "tags",
+          "name": "tags",
+          "type": "tags"
+        },
+        {
+          "title": "type",
+          "name": "type",
+          "type": "string"
+        }
+      ]
+    }
+  ],
+  "frontMatter.framework.id": "next",
+  "frontMatter.content.publicFolder": "public"
+}
