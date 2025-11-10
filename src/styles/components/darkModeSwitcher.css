@@ -1,0 +1,26 @@
+@layer components {
+  .dark-mode-switcher {
+    /* font-size: 1.5em; */
+    /* width: 40px;
+    height: 40px; */
+
+    @apply flex
+      justify-center
+      items-center
+      px-0!
+      py-0!
+      w-10!
+      h-10!
+      hover:text-accent-foreground
+      transition-shadow
+      duration-100
+      shadow-xl
+      hover:shadow-sm
+      rounded-md
+      cursor-pointer;
+
+    > svg {
+      @apply w-6! h-6!;
+    }
+  }
+}
