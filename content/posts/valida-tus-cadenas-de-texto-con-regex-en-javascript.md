@@ -87,6 +87,7 @@ Te animo a que pruebes estas RegEx en alguno de los sitios que te dejo a continu
 
 - [https://regexr.com/](https://regexr.com/)
 - [https://regex101.com](https://regex101.com/)
+- [https://extendsclass.com/regex-tester.html](https://extendsclass.com/regex-tester.html)
 
 Puedes consultar también la página de [Mozilla Developer Network (MDN)](<[https://developer.mozilla.org/es/docs/Web/JavaScript/Reference/Global_Objects/RegExp](https://developer.mozilla.org/es/docs/Web/JavaScript/Reference/Global_Objects/RegExp)>), en la que se describe en mayor profundidad el objet RegEx
 
