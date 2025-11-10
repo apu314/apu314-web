@@ -5,9 +5,6 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "postbuild": "run-s generate-sitemap build-algolia-search",
-    "generate-sitemap": "next-sitemap",
-    "build-algolia-search": "tsx ./scripts/build-algolia-search.ts",
     "start": "next start",
     "lint": "eslint",
     "format": "prettier --write .",
