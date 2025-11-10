@@ -676,6 +676,11 @@
   dependencies:
     tslib "^2.4.0"
 
+"@types/dateformat@^5.0.3":
+  version "5.0.3"
+  resolved "https://registry.yarnpkg.com/@types/dateformat/-/dateformat-5.0.3.tgz#7e622b176c377592577a1393dace20320acf1039"
+  integrity sha512-hvskLa9ObgUwJe0rtfkyBbU+VIK8Ia3BACsxRsp4CPnyPBAOyIHbqImfBGFfaVVxn82wGx5SD8Twll6jMc/BaQ==
+
 "@types/estree@^1.0.6":
   version "1.0.8"
   resolved "https://registry.yarnpkg.com/@types/estree/-/estree-1.0.8.tgz#958b91c991b1867ced318bedea0e215ee050726e"
