@@ -13,8 +13,10 @@ type Props = {
   content: string
 }
 
-// Configure marked with custom renderer for code highlighting
+// Configure marked with custom renderer for code highlighting and heading IDs
 marked.use({
+  gfm: true,
+  breaks: true,
   renderer: {
     code({ text, lang }) {
       if (lang && hljs.getLanguage(lang)) {
@@ -31,6 +33,17 @@ marked.use({
 
       const autoHighlighted = hljs.highlightAuto(text).value
       return `<pre><code class="hljs">${autoHighlighted}</code></pre>`
+    },
+    heading({ text, depth }) {
+      // Generate slug from heading text
+      const slug = text
+        .toLowerCase()
+        .replace(/[^\w\sáéíóúñü-]/g, '')
+        .replace(/\s+/g, '-')
+        .replace(/-+/g, '-')
+        .replace(/^-|-$/g, '')
+
+      return `<h${depth} id="${slug}">${text}</h${depth}>`
     }
   }
 })

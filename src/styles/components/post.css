@@ -34,14 +34,144 @@
   }
 
   .post-content {
+    /* Headings */
+    h1 {
+      font-size: 2em;
+      font-weight: 700;
+      margin-top: 2.5rem;
+      margin-bottom: 1.5rem;
+      scroll-margin-top: 2rem; /* For anchor links */
+    }
+
     h2 {
       font-size: 1.5em;
+      font-weight: 600;
+      margin-top: 2rem;
       margin-bottom: 1rem;
+      scroll-margin-top: 2rem; /* For anchor links */
     }
 
     h3 {
       font-size: 1.25em;
+      font-weight: 600;
+      margin-top: 1.5rem;
       margin-bottom: 0.85rem;
+      scroll-margin-top: 2rem; /* For anchor links */
+    }
+
+    h4 {
+      font-size: 1.1em;
+      font-weight: 600;
+      margin-top: 1.25rem;
+      margin-bottom: 0.75rem;
+      scroll-margin-top: 2rem; /* For anchor links */
+    }
+
+    /* Links */
+    a {
+      @apply text-primary hover:text-accent dark:text-accent dark:hover:text-primary;
+      text-decoration: underline;
+      text-underline-offset: 0.2em;
+      transition: color 0.2s ease;
+    }
+
+    /* Tables */
+    table {
+      @apply w-full border-collapse my-8;
+      @apply border border-border;
+    }
+
+    thead {
+      @apply bg-muted;
+    }
+
+    th {
+      @apply px-4 py-3 text-left font-semibold;
+      @apply border-b-2 border-border;
+      @apply text-foreground;
+    }
+
+    td {
+      @apply px-4 py-3;
+      @apply border-b border-border;
+      @apply text-foreground;
+    }
+
+    tbody tr {
+      @apply hover:bg-muted/50 transition-colors;
+    }
+
+    tbody tr:last-child td {
+      @apply border-b-0;
+    }
+
+    /* Table of Contents (ordered list) */
+    ol {
+      @apply list-decimal pl-6 my-6;
+      @apply space-y-2;
+
+      li {
+        @apply text-foreground;
+        @apply pl-2;
+
+        &::marker {
+          @apply text-muted-foreground font-semibold;
+        }
+      }
+
+      /* Nested lists */
+      ol {
+        @apply mt-2 mb-0;
+      }
+    }
+
+    /* Unordered lists */
+    ul {
+      @apply list-disc pl-6 my-6;
+      @apply space-y-2;
+
+      li {
+        @apply text-foreground;
+        @apply pl-2;
+      }
+    }
+
+    /* Code blocks (inline) */
+    code:not(.hljs) {
+      @apply bg-muted text-accent-foreground;
+      @apply px-1.5 py-0.5 rounded;
+      @apply text-sm;
+      font-family: 'Courier New', monospace;
+    }
+
+    /* Blockquotes */
+    blockquote {
+      @apply border-l-4 border-accent;
+      @apply pl-4 my-6;
+      @apply text-muted-foreground italic;
+    }
+
+    /* Horizontal rules */
+    hr {
+      @apply border-t-2 border-border;
+      @apply my-8;
+    }
+
+    /* Paragraphs */
+    p {
+      @apply text-foreground;
+      @apply leading-relaxed;
+      margin-bottom: 1.5rem;
+    }
+
+    /* Strong/Bold */
+    strong {
+      @apply font-semibold text-foreground;
+    }
+
+    /* Emphasis/Italic */
+    em {
+      @apply italic;
     }
   }
 }
