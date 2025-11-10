@@ -406,16 +406,16 @@ export default function HomePage() {
 
 ### 2.5. Diferencias clave: Pages Router vs App Router
 
-| Característica | Pages Router | App Router |
-|---|---|---|
-| Directorio | `pages/` | `app/` |
-| Archivo de ruta | `index.tsx` | `page.tsx` |
-| Layout raíz | `_app.tsx` | `layout.tsx` |
+| Característica    | Pages Router                           | App Router                           |
+| ----------------- | -------------------------------------- | ------------------------------------ |
+| Directorio        | `pages/`                               | `app/`                               |
+| Archivo de ruta   | `index.tsx`                            | `page.tsx`                           |
+| Layout raíz       | `_app.tsx`                             | `layout.tsx`                         |
 | Fetching de datos | `getStaticProps`, `getServerSideProps` | `async` functions, `fetch` con cache |
-| Metadatos | `<Head>` component | `metadata` export |
-| Rutas dinámicas | `[slug].tsx` | `[slug]/page.tsx` |
-| Loading UI | Custom con condicionales | `loading.tsx` |
-| Error handling | `_error.tsx` | `error.tsx` |
+| Metadatos         | `<Head>` component                     | `metadata` export                    |
+| Rutas dinámicas   | `[slug].tsx`                           | `[slug]/page.tsx`                    |
+| Loading UI        | Custom con condicionales               | `loading.tsx`                        |
+| Error handling    | `_error.tsx`                           | `error.tsx`                          |
 
 ## Paso 3: Migrar páginas dinámicas
 
@@ -1203,12 +1203,12 @@ export default function Header() {
 
 ### 9.2. Diferencias: useRouter vs usePathname
 
-| Hook | Pages Router | App Router |
-|---|---|---|
-| Obtener ruta | `router.pathname` | `usePathname()` |
-| Navegar | `router.push()` | `router.push()` (igual) |
-| Query params | `router.query` | `useSearchParams()` |
-| Importar desde | `next/router` | `next/navigation` |
+| Hook           | Pages Router      | App Router              |
+| -------------- | ----------------- | ----------------------- |
+| Obtener ruta   | `router.pathname` | `usePathname()`         |
+| Navegar        | `router.push()`   | `router.push()` (igual) |
+| Query params   | `router.query`    | `useSearchParams()`     |
+| Importar desde | `next/router`     | `next/navigation`       |
 
 ## Paso 10: Resolver problema de rama huérfana en Git
 
@@ -1524,9 +1524,7 @@ Después de migrar:
 
 ## ¿Tienes preguntas?
 
-Si encontraste algún desafío durante tu migración o tienes dudas sobre algún paso específico, déjame un comentario abajo. Estaré encantado de ayudarte en tu proceso de migración a Next.js 16.
-
-¿Ya migraste a App Router? ¿Qué fue lo más difícil? ¿Qué beneficios has notado? Comparte tu experiencia en los comentarios.
+Si encontraste algún desafío durante tu migración o tienes dudas o algún comentario sobre algún paso específico, puedes enviarme un mensaje mediante alguna de mis redes sociales. Estaré encantado de ayudarte en tu proceso de migración a Next.js 16.
 
 ---
 
