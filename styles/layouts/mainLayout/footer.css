@@ -1,9 +1,0 @@
-@layer components {
-  footer.footer {
-    @apply container pt-20 pb-4 mx-auto content-center;
-
-    ul {
-      @apply list-none p-0 flex justify-center gap-6;
-    }
-  }
-}

@@ -1,0 +1,29 @@
+@layer components {
+  header.header {
+    @apply container py-4 mb-8 mx-auto px-4 sm:px-8 lg:px-16 xl:px-20 2xl:px-24;
+  }
+
+  .header-inner {
+    @apply flex justify-between items-center py-4;
+  }
+
+  .logo {
+    @apply h-11
+      w-11
+      /* w-auto */
+      flex
+      items-center
+      justify-center
+      hover:text-accent-foreground
+      transition-shadow
+      duration-100
+      shadow-xl
+      hover:shadow-sm
+      rounded-md;
+    font-size: 1.5em;
+  }
+
+  nav.header-nav {
+    @apply flex items-center;
+  }
+}

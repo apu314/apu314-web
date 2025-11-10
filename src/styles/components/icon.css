@@ -1,0 +1,32 @@
+@layer components {
+  .icon {
+    @apply p-2
+      rounded-md
+      hover:shadow-md
+      duration-100;
+  }
+
+  .social-icon {
+    cursor: pointer;
+  }
+
+  .icon-github {
+    @apply cursor-pointer hover:text-muted-foreground dark:hover:text-foreground transition-colors duration-200;
+  }
+
+  .icon-linkedin {
+    @apply cursor-pointer transition-colors duration-200;
+  }
+
+  .icon-linkedin:hover {
+    color: #0a66c2;
+  }
+
+  .icon-twitter {
+    @apply cursor-pointer transition-colors duration-200;
+  }
+
+  .icon-twitter:hover {
+    color: #1a8cd8;
+  }
+}
