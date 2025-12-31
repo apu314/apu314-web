@@ -3,7 +3,7 @@ title: Guía Completa para Migrar de Next.js 13 Pages Router a Next.js 16 App Ro
 description: Tutorial paso a paso para migrar tu aplicación Next.js desde Pages Router a App Router. Aprende a actualizar dependencias, resolver errores comunes, optimizar SEO y mejorar el rendimiento de tu sitio web con las últimas características de Next.js 16
 isPublished: true
 publishedDate: 2025/11/10
-modifiedDate: 2025/11/10
+modifiedDate: 2025/12/31
 type: post
 tags:
   - Next.js
@@ -1521,6 +1521,12 @@ Después de migrar:
 3. **Implementa ISR**: Revalidación incremental para contenido dinámico
 4. **Explora Partial Prerendering**: Nueva feature de Next.js
 5. **Contribuye a la comunidad**: Comparte tu experiencia
+
+### Artículos relacionados en este blog
+
+- [Cómo Resolver el Problema N+1 en Prisma: Optimiza de 11 Queries a 1 con relationJoins](https://apu314.com/posts/optimizar-prisma-n-plus-1-relationjoins)
+
+---
 
 ## ¿Tienes preguntas?
 
